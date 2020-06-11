@@ -3,7 +3,7 @@
 <head>
 	<title>Catalogo</title>
 
-	<link rel="icon" type="image/png" href="Img/Logo.png">
+	<link rel="icon" type="image/png" href="assets/img/Logo.png">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<meta charset="utf-8">
@@ -17,26 +17,27 @@
 
 <div>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-    <a href="inicio.jsp" class="navbar-brand" href="#">
-    <img src="img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-    <a href="inicio.jsp" class="navbar-brand" href="#">HSD PLUS</a>
+    <a href="inicio.php" class="navbar-brand" >
+    <img src="assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
+    <a href="inicio.php" class="navbar-brand" >HSD PLUS</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-          <a href="Catalogo.jsp" class="nav-link" style="color: #47A5B4;">Catalogo
+          <a href="Catalogo.php" class="nav-link" style="color: #47A5B4;">Catalogo
           </a>
-          <a href="Contactenos.jsp" class="nav-link" style="color: #47A5B4;">Contactenos
+          <a href="Contactenos.php" class="nav-link" style="color: #47A5B4;">Contactenos
           </a>
-          <a href="Quienessomos.jsp" class="nav-link" style="color: #47A5B4;">¿Quienes Somos?
+          <a href="Quienessomos.php" class="nav-link" style="color: #47A5B4;">¿Quienes Somos?
           </a>
-          <a href="Misión y Visión.jsp" class="nav-link" style="color: #47A5B4;">Misión y Visión
+          <a href="Misión y Visión.php" class="nav-link" style="color: #47A5B4;">Misión y Visión
           </a>
-          <a href="Portafolio.jsp" class="nav-link" style="color: #47A5B4;">Portafolio
+          <a href="Portafolio.php" class="nav-link" style="color: #47A5B4;">Portafolio
           </a>
         </li>
       </ul>
+      <span><a style="float:left;" href="./ingles/start.php">Ingles</a></span>
       <nav class="navbar navbar-light bg-light">
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -45,11 +46,11 @@
       </div>
       <div class="btn-group dropleft">
         <button style="background-color: #ffffff;" class="button" class="btn btn-sec btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="img/Usuario.png" width="40" height="40" alt="">
+          <img src="assets/img/Usuario.png" width="40" height="40" alt="">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="iniciosesion.jsp">Iniciar Sesión</a>
-          <a class="dropdown-item" href="Registrar.jsp">Registrar</a>
+          <a class="dropdown-item" href="./esp/iniciosesion.php">Iniciar Sesión</a>
+          <a class="dropdown-item" href="./esp/Registrar.php">Registrar</a>
         </div>
       </div>
     </div>
@@ -74,7 +75,7 @@
     <small  class="d-block mb-3 text-right text-muted">14 Jun</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="img/11.jpg" class="card-img-top" alt="img">
+    <img src="assets/img/11.jpg" class="card-img-top" alt="img">
   </div>
 </div>
 </br>
@@ -93,7 +94,7 @@
     <small  class="d-block mb-3 text-right text-muted">6 Jun</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="img/2.jpg" class="card-img-top" alt="img">
+    <img src="assets/img/2.jpg" class="card-img-top" alt="img">
   </div>
 </div>
 </br>
@@ -112,7 +113,7 @@
     <small  class="d-block mb-3 text-right text-muted">1 Jun</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="img/3.jpg" class="card-img-top" alt="img">
+    <img src="assets/img/3.jpg" class="card-img-top" alt="img">
   </div>
 </div>
 </br>
@@ -131,7 +132,7 @@
     <small  class="d-block mb-3 text-right text-muted">29 May</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="img/4.jpg" class="card-img-top" alt="img">
+    <img src="assets/img/4.jpg" class="card-img-top" alt="img">
   </div>
 </div>
 </br>
@@ -150,7 +151,7 @@
     <small  class="d-block mb-3 text-right text-muted">25 May</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="img/5.jpg" class="card-img-top" alt="img">
+    <img src="assets/img/5.jpg" class="card-img-top" alt="img">
   </div>
 </div>
 </br>
@@ -169,7 +170,7 @@
     <small  class="d-block mb-3 text-right text-muted">25 May</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="img/6.jpg" class="card-img-top" alt="img">
+    <img src="assets/img/6.jpg" class="card-img-top" alt="img">
   </div>
 </div>
 </br>
@@ -188,7 +189,7 @@
     <small  class="d-block mb-3 text-right text-muted">25 May</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="img/7.jpg" class="card-img-top" alt="img">
+    <img src="assets/img/7.jpg" class="card-img-top" alt="img">
   </div>
 </div>
 </br>
@@ -207,7 +208,7 @@
     <small  class="d-block mb-3 text-right text-muted">25 May</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="img/8.jpg" class="card-img-top" alt="img">
+    <img src="assets/img/8.jpg" class="card-img-top" alt="img">
   </div>
 </div>
 </br>
@@ -226,7 +227,7 @@
     <small  class="d-block mb-3 text-right text-muted">25 May</small>
   </div>
   <div class="col-md-3 order-md-1">
-    <img src="img/9.jpg" class="card-img-top" alt="img">
+    <img src="assets/img/9.jpg" class="card-img-top" alt="img">
   </div>
 </div>
 
