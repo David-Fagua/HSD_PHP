@@ -14,32 +14,52 @@
 
 <body>
 
+<br/>
+<br/>
+<br/>
+<br/>
+
 <div>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-    <a href="inicio.html" class="navbar-brand" href="#">
-    <img src="../img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-    <a href="../inicio.html" class="navbar-brand" href="#">HSD PLUS</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #47A5B4;">
+  <a href="../../HSD_php/index.php" class="navbar-brand" >
+  <img src="../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
+  <a href="../../HSD_php/index.php" class="navbar-brand" >HSD PLUS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        </li>
+      </ul>    
+      
+      <button  href="ingles/start.php" type="button" class="btn btn-info">
+      <img src="../assets/img/ingles.png" width="40" height="40" alt="">
+      </button>
+      &nbsp;
+      &nbsp;
+      <div class="btn-group dropleft">
+      <button type="button" class="btn btn-info" class="btn btn-sec dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="../assets/img/Usuario.png" width="40" height="40" alt="">
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="sesion/iniciosesion.php">Iniciar Sesión</a>
+        <a class="dropdown-item" href="sesion/Registrar.php">Registrar</a>
+        </div>
+        </div>
+        </div>
   </nav>
 </div>
-
-<br/>
-<br/>
-<br/>
-<br/>
 
 <div class="row">
     <div class="col-md-3">
     </div>
     <div class="col-md-6">
       <center>
-        <img src="../img/Usuario.png" width="100" height="100" alt="HSD PLUS">
+        <img src="../assets/img/Usuario.png" width="100" height="100" alt="HSD PLUS">
         <h2>Iniciar Sesión</h2>
       </center>
       <div class="myform-bottom">
-        <form role="form" action="./Admin/inicio.html" method="post" class="" onsubmit="return validarInicio()">
+        <form role="form" action="./Admin/inicio.php" method="post" class="" onsubmit="return validarInicio()">
           <div class="form-group">
             <input type="text" name="form-username" placeholder="Usuario" class="form-control" id="user-username">
           </div>
@@ -49,11 +69,11 @@
 
           <div class="text-center">
             <p>No estoy registrado
-              <a href="Registrar.html">Registrar</a>
+              <a href="Registrar.php">Registrar</a>
             </p>
           </div>
           <div class="text-center">
-            <a href="Recordar.html">Recordar contraseña</a>
+            <a href="Recordar.php">Recordar contraseña</a>
           </div>
           <br/>
 
@@ -63,38 +83,13 @@
 
         <div class="text-center">
           <p>Entrar como
-            <a href="./Cliente/Catalogo.html">Cliente</a>
+            <a href="./Cliente/Catalogo.php">Cliente</a>
           </p>
         </div>
     </form>
   </div>
 </div>
 
-
-   
-
-<script type="text/javascript">
-  function validarInicio(){
-
-    var clave = document.getElementById('form-password').value;
-
-      var usuario1 = document.getElementById('user-username').value;
-
-
-      switch (usuario1) {
-      case 'admin@gmail.com':
-      LocalStorege.setItem('LogUser','admin@gmail.com');
-      return true;
-      break;
-      case 'cliente@gmail.com':
-      LocalStorege.setItem('LogUser', 'cliente@gmail.com');
-      return true;
-      break;
-      default:alert('Usuario no encontrado, verifique su informacion');
-      return false; 
-      }
-  }
-</script>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

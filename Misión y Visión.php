@@ -16,49 +16,56 @@
 <br/>
 <br/>
 <br/>
-<div>
 
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-    <a href="inicio.php" class="navbar-brand" >
-    <img src="assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-    <a href="inicio.php" class="navbar-brand" >HSD PLUS</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<div>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #47A5B4;">
+    <a href="index.php" class="navbar-brand" >
+      <img src="assets/img/Logo.png" width="40" height="40" alt="HSD PLUS">
+    </a>
+    <a href="index.php" class="navbar-brand" >HSD PLUS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-          <a href="Catalogo.php" class="nav-link" style="color: #47A5B4;">Catalogo
+          <a href="Catalogo.php" class="nav-link" style="color: #ffffff;">Catalogo
           </a>
-          <a href="Contactenos.php" class="nav-link" style="color: #47A5B4;">Contactenos
+          <a href="Contactenos.php" class="nav-link" style="color: #ffffff;">Contactenos
           </a>
-          <a href="Quienessomos.php" class="nav-link" style="color: #47A5B4;">¿Quienes Somos?
+          <a href="Quienessomos.php" class="nav-link" style="color: #ffffff;">¿Quienes Somos?
           </a>
-          <a href="Misión y Visión.php" class="nav-link" style="color: #47A5B4;">Misión y Visión
+          <a href="Misión y Visión.php" class="nav-link" style="color: #ffffff;">Misión y Visión
           </a>
-          <a href="Portafolio.php" class="nav-link" style="color: #47A5B4;">Portafolio
+          <a href="Portafolio.php" class="nav-link" style="color: #ffffff;">Portafolio
           </a>
         </li>
       </ul>
-      <span><a style="float:left;" href="./ingles/start.php">Ingles</a></span>
-      <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button style="color:#47A5B4;" class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
-      </div>
-      <div class="btn-group dropleft">
-        <button style="background-color: #ffffff;" class="button" class="btn btn-sec btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="assets/img/Usuario.png" width="40" height="40" alt="">
+      
+      <div>
+        <button type="button" class="btn btn-info">
+          <a href="start.php"  >
+            <img src="assets/img/ingles.png" width="40" height="40" alt="">
+          </a>
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="./esp/iniciosesion.php">Iniciar Sesión</a>
-          <a class="dropdown-item" href="./esp/Registrar.php">Registrar</a>
-        </div>
       </div>
+      
+      &nbsp;
+      &nbsp;
+
+      <div class="btn-group dropleft">
+      <button type="button" class="btn btn-info" class="btn btn-sec dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="assets/img/Usuario.png" width="40" height="40" alt="">
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="./sesion/iniciosesion.php">Iniciar Sesión</a>
+        <a class="dropdown-item" href="./sesion/Registrar.php">Registrar</a>
+      </div>
+      </div>
+
     </div>
   </nav>
 </div>
- 
+
 <div class="container">
   <div class="row featurette">
     <div class="col-md-7">
