@@ -3,7 +3,7 @@
 <head>
   <title>Iniciar Sesión</title>
 
-  <link rel="icon" type="image/png" href="../Img/Logo.png">
+  <link rel="icon" type="image/png" href="../assets/img/Logo.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <meta charset="utf-8">
@@ -20,51 +20,63 @@
 <br/>
 
 <div>
-  <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #47A5B4;">
-  <a href="../../HSD_php/index.php" class="navbar-brand" >
-  <img src="../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-  <a href="../../HSD_php/index.php" class="navbar-brand" >HSD PLUS</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #47a5b4;">
+    <a href="../../HSD_php/index.php" class="navbar-brand" >
+      <img src="../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
+      <a href="../../HSD_php/index.php" class="navbar-brand" >HSD PLUS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"></ul>
         </li>
       </ul>    
       
-      <button  href="ingles/start.php" type="button" class="btn btn-info">
-      <img src="../assets/img/ingles.png" width="40" height="40" alt="">
-      </button>
+      <div>
+        <button type="button" class="btn btn-info">
+          <a href="start.php"  >
+            <img src="assets/img/ingles.png" width="40" height="40" alt="">
+          </a>
+        </button>
+      </div>
+      
       &nbsp;
       &nbsp;
+
       <div class="btn-group dropleft">
       <button type="button" class="btn btn-info" class="btn btn-sec dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <img src="../assets/img/Usuario.png" width="40" height="40" alt="">
+      <img src="assets/img/Usuario.png" width="40" height="40" alt="">
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="sesion/iniciosesion.php">Iniciar Sesión</a>
-        <a class="dropdown-item" href="sesion/Registrar.php">Registrar</a>
-        </div>
-        </div>
-        </div>
+        <a class="dropdown-item" href="./sesion/iniciosesion.php">Iniciar Sesión</a>
+        <a class="dropdown-item" href="./sesion/Registrar.php">Registrar</a>
+      </div>
+      </div>
+
+    </div>
   </nav>
 </div>
 
-<div class="row">
-    <div class="col-md-3">
-    </div>
+<form action="" method="POST">
+  <?php
+    if(isset($errorLogin)){
+      echo $errorLogin;
+    }
+  ?>
+  <div class="row">
+    <div class="col-md-3"></div>
     <div class="col-md-6">
       <center>
         <img src="../assets/img/Usuario.png" width="100" height="100" alt="HSD PLUS">
         <h2>Iniciar Sesión</h2>
       </center>
       <div class="myform-bottom">
-        <form role="form" action="./Admin/inicio.php" method="post" class="" onsubmit="return validarInicio()">
+        <form role="form" action="./Admin/inicio.php" method="post">
           <div class="form-group">
-            <input type="text" name="form-username" placeholder="Usuario" class="form-control" id="user-username">
+            <input type="text" placeholder="Usuario" class="form-control" id="user-username">
           </div>
           <div class="form-group">
-            <input type="password" name="form-password" placeholder="Contraseña" class="form-control" id="form-password">
+            <input type="password" placeholder="Contraseña" class="form-control" id="form-password">
           </div>
 
           <div class="text-center">
@@ -80,16 +92,52 @@
         <center>
           <button style="float:center;" class="btn btn-primary btn-lg" role="button" type="submit" class="mybtn">Ingresar</button>
         </center>
-
-        <div class="text-center">
-          <p>Entrar como
-            <a href="./Cliente/Catalogo.php">Cliente</a>
-          </p>
-        </div>
     </form>
   </div>
 </div>
+</form>
 
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+ <?php
+
+//inicio Admin=admin/inicio.php 
+//inicio Cliente=cliente/catalogo.php
+
+include_once 'includes/user.php';
+include_once 'includes/user_session.php';
+
+
+$userSession = new UserSession();
+$user = new User();
+
+if(isset($_SESSION['user'])){
+    //echo "hay sesion";
+    $user->setUser($userSession->getCurrentUser());
+    include_once 'admin/inicio.php';
+
+}else if(isset($_POST['username']) && isset($_POST['password'])){
+    
+    $userForm = $_POST['username'];
+    $passForm = $_POST['password'];
+
+    $user = new User();
+    if($user->userExists($userForm, $passForm)){
+        //echo "Existe el usuario";
+        $userSession->setCurrentUser($userForm);
+        $user->setUser($userForm);
+
+        include_once 'admin/home.php';
+    }else{
+        //echo "No existe el usuario";
+        $errorLogin = "Nombre de usuario y/o password incorrecto";
+        include_once 'vistas/login.php';
+    }
+}else{
+    //echo "login";
+    include_once 'vistas/login.php';
+}
+
+?>

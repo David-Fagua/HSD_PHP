@@ -130,7 +130,7 @@
 <div class="container">
   <div class="row featurette">
     <div class="col-md-6 order-md-2">
-      <h3 class="featurette-heading">Hilo de algodón</h3>
+      <h3 class="featurette-heading" >Hilo de algodón</h3>
       <h6 href="Productos.php" class="lead">este tipo de hilo sirve para cualquier tipo de costura pero es muy aconsejado para coser a mano, ya que es suave y fácil de sacar y romper.</h6>
       <div class="col-6 col-md">
       <a href="#" class="badge badge-info">Destacado</a>
@@ -212,28 +212,28 @@
 			<div class="col-6 col-md">
 				<h5 style="color:#ffffff;">Información útil</h5>
 				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="#">Contacto & Ayuda</a></li>
-					<li><a class="text-muted" href="#">Consejos de seguridad</a></li>
-					<li><a class="text-muted" href="#">Terminos & Condiciones</a></li>
-					<li><a class="text-muted" href="#">Acerca de HSD Plus</a></li>
-					<li><a class="text-muted" href="#">Sumate a nosotros</a></li>
+					<li><a  href="#" style="color: #009BDB;">Contacto & Ayuda</a></li>
+					<li><a  href="#" style="color: #009BDB;">Consejos de seguridad</a></li>
+					<li><a  href="#" style="color: #009BDB;">Terminos & Condiciones</a></li>
+					<li><a  href="#" style="color: #009BDB;">Acerca de HSD Plus</a></li>
+					<li><a href="#" style="color: #009BDB;">Sumate a nosotros</a></li>
 				</ul>
 			</div>
 			<div class="col-6 col-md">
 				<h5 style="color:#ffffff;">Servicios</h5>
 				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="./sesion/Registrar.php">Registrate</a></li>
-					<li><a class="text-muted" href="#">Reserva</a></li>
-					<li><a class="text-muted" href="#">Consulta</a></li>
+					<li><a href="./sesion/Registrar.php" style="color: #009BDB;">Registrate</a></li>
+					<li><a href="#" style="color: #009BDB;">Reserva</a></li>
+					<li><a href="#" style="color: #009BDB;">Consulta</a></li>
 				</ul>
 			</div>
 			<div class="col-6 col-md">
 				<h5 style="color:#ffffff;">Contactenos</h5>
 				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="#">Equipo</a></li>
-					<li><a class="text-muted" href="#">Localización</a></li>
-					<li><a class="text-muted" href="#">Privacidad</a></li>
-					<li><a class="text-muted" href="#">Terminos</a></li>
+					<li><a  href="#" style="color: #009BDB;">Equipo</a></li>
+					<li><a  href="#" style="color: #009BDB;">Localización</a></li>
+					<li><a  href="#" style="color: #009BDB;">Privacidad</a></li>
+					<li><a  href="#" style="color: #009BDB;">Terminos</a></li>
 				</ul>
 			</div>
 		</div>
