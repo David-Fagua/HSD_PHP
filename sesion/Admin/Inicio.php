@@ -6,7 +6,7 @@
 
     <title>Inicio</title>
 
-    <link rel="icon" type="image/png" href="../../assets/img/Logo.png">
+    <link rel="icon" type="image/png" href="../../assets/icon/Logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="../../assets/css/index_style.css" rel="stylesheet" type="text/css">
     <link href="../../assets/css/timeline.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 
 <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #000000;">
     <a href="inicio.php" class="navbar-brand" >
-        <img src="../../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS">
+        <img src="../../assets/icon/Logo.png" width="40" height="40" alt="HSD PLUS">
     </a>
     <a href="inicio.php" class="navbar-brand" >HSD PLUS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
     <div>
         <button type="button" class="btn btn-info">
             <a href="../Error404.php">
-            <img src="../../assets/img/ingles.png" width="30" height="30" alt="">
+            <img src="../../assets/icon/ingles.png" width="30" height="30" alt="">
             </a>
         </button>
     </div>
@@ -43,7 +43,7 @@
         <li class="dropdown navbar-inverse">
             <button  class="btn btn-info" class="btn btn-sec"  data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                 <a >
-                    <img src="../../assets/img/Usuario.png" width="30" height="30">
+                    <img src="../../assets/icon/Usuario.png" width="30" height="30">
                     Samuel Sanches
                 </a>
             </button>
@@ -63,91 +63,91 @@
 
      <div  id="contenedor-logos-primero" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/Usuario.png" width="20" height="20">
+        <img src="../../assets/icon/1.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">user</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/22.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registro Reserva</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/21.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registro Ventas</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/2.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Inventario General</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/15.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Producto en Proceso</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/18.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Producto Final</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/16.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Desechos</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/3.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Usuario</a>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Usuarios</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/13.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Gestor de Catalogo</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/5.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Tipo Documento</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/17.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registrar Rol</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/20.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registrar Proveedor</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
-        <img src="../../assets/img/menu.png" width="20" height="20">
+        <img src="../../assets/icon/colombia.png" width="25" height="25">
         </div>
         <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Ciudades</a>
     </div>

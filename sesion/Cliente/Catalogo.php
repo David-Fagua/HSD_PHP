@@ -3,7 +3,7 @@
 <head>
 	<title>Catalogo</title>
 
-	<link rel="icon" type="image/png" href="../../assets/img/Logo.png">
+	<link rel="icon" type="image/png" href="../../assets/icon/Logo.png">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<meta charset="utf-8">
@@ -20,7 +20,7 @@
 <div>
   <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #009BDB;">
     <a href="Catalogo.html" class="navbar-brand">
-    <img src="../../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
+    <img src="../../assets/icon/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
     <a href="Catalogo.html" style="color: #ffffff;" class="navbar-brand">SHD PLUS</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
       <div>
         <button type="button" class="btn btn-link">
           <a src="../../assets/img/ingles.png">
-            <img src="../../assets/img/ingles.png" width="40" height="40" alt="">
+            <img src="../../assets/icon/ingles.png" width="40" height="40" alt="">
           </a>
         </button>
       </div>
@@ -61,7 +61,7 @@
 
       <div class="btn-group dropleft">
       <button type="button" class="btn btn-link" class="btn btn-sec dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <img src="../../assets/img/Usuario.png" width="40" height="40" alt="">
+      <img src="../../assets/icon/Usuario.png" width="40" height="40" alt="">
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <a href="../Error404.php" class="dropdown-item">Usuario</a>
