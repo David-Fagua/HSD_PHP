@@ -7,9 +7,11 @@ class DB{
     private $password;
     private $charset;
 
+    //base de datos. 
+
     public function __construct(){
         $this->host     = 'localhost';
-        $this->db       = 'compras';
+        $this->db       = 'hsd_plus';
         $this->user     = 'root';
         $this->password = "123!\"·QWE";
         $this->charset  = 'utf8mb4';

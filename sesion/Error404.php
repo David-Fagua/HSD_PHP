@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Error 404</title>
-<link rel="icon" type="image/png" href="../Img/Logo.png">
+<link rel="icon" type="image/png" href="../assets/img/Logo.png">
 
-	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
 	
 
 </head>
@@ -24,7 +24,7 @@
 			</div>
 			<h2>Página no encontrada </h2>
 			<p>La página que está buscando podría haberse eliminado si su nombre hubiera cambiado o no estuviera disponible temporalmente.</p>
-			<a href="../inicio.html">Homepage</a>
+			<a href="../index.php">Homepage</a>
 		</div>
 	</div>
 

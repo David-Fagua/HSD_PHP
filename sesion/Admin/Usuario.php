@@ -9,13 +9,13 @@
 
     <title>Usuarios</title>
 
-    <link rel="icon" type="image/png" href="../../Img/Logo.png">
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/metisMenu.min.css" rel="stylesheet">
-    <link href="../../css/timeline.css" rel="stylesheet">
-    <link href="../../css/startmin.css" rel="stylesheet">
-    <link href="../../css/morris.css" rel="stylesheet">
-    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="../../assets/Img/Logo.png">
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/metisMenu.min.css" rel="stylesheet">
+    <link href="../../assets/css/timeline.css" rel="stylesheet">
+    <link href="../../assets/css/startmin.css" rel="stylesheet">
+    <link href="../../assets/css/morris.css" rel="stylesheet">
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -95,7 +95,7 @@
                     <li><a href="../Error 404.html"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="../../Inicio.html"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a>
+                    <li><a href="../../assets/Inicio.html"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a>
                     </li>
                 </ul>
             </li>
@@ -103,7 +103,7 @@
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
                 <a href="inicio.html" class="navbar-brand" href="#">
-                    <img src="../../img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
+                    <img src="../../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
                     <a href="inicio.html" class="navbar-brand" href="#">HSD PLUS</a>
                 </br>
                 </br>
@@ -185,16 +185,16 @@
                 <a href="Usuario.html" class="btn btn-info">Ver Más.</a>
             </div>
             <div class="col-md-5">
-                <img src="../../img/21.jpg" width="300" height="300" class="card-img-top">
+                <img src="../../assets/img/21.jpg" width="300" height="300" class="card-img-top">
             </div>
         </div>
     </div>
 </div>
 
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/bootstrap.min.js"></script>
-<script src="../../js/metisMenu.min.js"></script>
-<script src="../../js/startmin.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/metisMenu.min.js"></script>
+<script src="../../assets/js/startmin.js"></script>
 
 </body>
 </html>

@@ -3,13 +3,12 @@
 <head>
 	<title>Cotizar</title>
 
-	<link rel="icon" type="image/png" href="../../Img/Logo.png">
+	<link rel="icon" type="image/png" href="../../assets/img/Logo.png">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<meta charset="utf-8">
 
 </head>
-
 
 <body>
 
@@ -20,7 +19,7 @@
 <div>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
     <a href="Catalogo.html" class="navbar-brand" href="#">
-    <img src="../../img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
+    <img src="../../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
     <a href="Catalogo.html" class="navbar-brand" href="#">SHD PLUS</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -43,7 +42,7 @@
       </div>
       <div class="btn-group dropleft">
         <button style="background-color: #ffffff;" class="button" class="btn btn-sec btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="../../img/Usuario.png" width="40" height="40" alt="">
+          <img src="../../assets/img/Usuario.png" width="40" height="40" alt="">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="Cliente.html">Cliente</a>
@@ -122,7 +121,7 @@
 <h2 class="featurette-heading">Hilo X</h2>
         <div class="row">
           <div class="col-md-6 mb-3">
-            <img src="../../img/18.jpg" class="card-img-top" alt="img">
+            <img src="../../assets/img/18.jpg" class="card-img-top" alt="img">
           </div>
           <div class="col-md-6 mb-3">
             <p class="lead">Un hilo es una hebra larga y delgada de un material textil, especialmente la que se usa para coser.1​

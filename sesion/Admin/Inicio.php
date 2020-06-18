@@ -1,353 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
     <title>Inicio</title>
 
-    <link rel="icon" type="image/png" href="../../Img/Logo.png">
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/metisMenu.min.css" rel="stylesheet">
-    <link href="../../css/timeline.css" rel="stylesheet">
-    <link href="../../css/startmin.css" rel="stylesheet">
-    <link href="../../css/morris.css" rel="stylesheet">
-    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="../../assets/img/Logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../../assets/css/index_style.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/timeline.css" rel="stylesheet">
+    <link href="../../assets/css/startmin.css" rel="stylesheet">
+    <link href="../../assets/css/morris.css" rel="stylesheet">
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<div id="wrapper">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Samuel X</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+<!--Navbar Superior-->
+
+<nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #000000;">
+    <a href="inicio.php" class="navbar-brand" >
+        <img src="../../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS">
+    </a>
+    <a href="inicio.php" class="navbar-brand" >HSD PLUS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+
+    <div>
+        <button type="button" class="btn btn-info">
+            <a href="../Error404.php">
+            <img src="../../assets/img/ingles.png" width="30" height="30" alt="">
+            </a>
         </button>
-        <ul class="nav navbar-nav navbar-left navbar-top-links">
-            <li><a href="inicio.html"><i class="fa fa-home fa-fw"></i> Inicio</a></li>
-        </ul>
-        <ul class="nav navbar-right navbar-top-links">
-            <li class="dropdown navbar-inverse">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-bell fa-fw"></i> <b class="caret"></b>
+    </div>
+      
+    &nbsp;
+    &nbsp;
+
+    <ul class="nav navbar-right navbar-top-links">
+        <li class="dropdown navbar-inverse">
+            <button  class="btn btn-info" class="btn btn-sec"  data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                <a >
+                    <img src="../../assets/img/Usuario.png" width="30" height="30">
+                    Samuel Sanches
                 </a>
-                <ul class="dropdown-menu dropdown-alerts">
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-comment fa-fw"></i> Nueva Reserva N°7
-                                <span class="pull-right text-muted small">Hace 4 minutos</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-comment fa-fw"></i> Nueva Reserva N°6
-                                <span class="pull-right text-muted small">Hace 1 hora</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-comment fa-fw"></i> Nueva Reserva N°5
-                                <span class="pull-right text-muted small">Hace 3 hora</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-comment fa-fw"></i> Nueva Reserva N°4
-                                <span class="pull-right text-muted small">Hace 23 hora</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <i class="fa fa-comment fa-fw"></i> Nueva Reserva N°3   
-                                <span class="pull-right text-muted small">Hace Un dia</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a class="text-center" href="#">
-                            <strong>Más Notificasiones</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i> Samuel Sanches <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu dropdown-user">
-                    <li><a href="Usuario.html"><i class="fa fa-user fa-fw"></i>Usuario</a>
-                    </li>
-                    <li><a href="../Error 404.html"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li><a href="../../Inicio.html"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
-                <a href="inicio.html" class="navbar-brand" href="#">
-                    <img src="../../img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-                    <a href="inicio.html" class="navbar-brand" href="#">HSD PLUS</a>
-                </br>
-                </br>
-                </br>
-                <ul class="nav" id="side-menu">
-                    <li class="sidebar-search">
-                        <div class="input-group custom-search-form">
-                            <input type="text" class="form-control" placeholder="Buscar">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </input>
-                        </div>
-                    </li>   
-                    <li>
-                        <a><i class="fa fa-bar-chart-o fa-fw"></i>Inventarios<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="../Inventario/Inventario.html">Inventario general</a>
-                            </li>
-                            <li>
-                                <a href="../Inventario/Añadir.html">Producto inicial</a>
-                            </li>
-                            <li>
-                                <a href="../Inventario/Editar.html">Producto en proceso</a>
-                            </li>
-                            <li>
-                                <a href="../Inventario/Eliminar.html">Producto final</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a><i class="fa fa-bar-chart-o fa-fw"></i>Ventas<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="./Ventas/Registrar.html">Registrar</a>
-                            </li>
-                            <li>
-                                <a href="./Ventas/Consultar.html">Consultar</a>
-                            </li>
-                            <li>
-                                <a href="./Ventas/Modificar.html">Modificar</a>
-                            </li>
-                            <li>
-                                <a href="./Ventas/Historial de ventas.html">Historial de ventas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./Catalogo/Modificar.html"><i class="fa fa-edit fa-fw"></i>Gestor del Catalogo
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./Reservaciones.html"><i class="fa fa-edit fa-fw"></i> Reservas de los Clientes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./Usuarios.html"><i class="fa fa-edit fa-fw"></i> Usuarios
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            </button>
+            <ul class="dropdown-menu dropdown-user">
+                <li><a href="Usuario.php"><i class="fa fa-user fa-fw"></i>Usuario</a></li>
+                <li><a href="../Error404.php"><i class="fa fa-gear fa-fw"></i> Configuraciones</a></li>
+                <li><a href="../../includes/logout.php" ><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!--Navbar Izquierdo-->
+
+<div id="barra-lateral" style="background-color: #47A5B4;">
+    
+
+     <div  id="contenedor-logos-primero" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/Usuario.png" width="20" height="20">
         </div>
-    </nav>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">user</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registro Reserva</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registro Ventas</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Inventario General</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Producto en Proceso</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Producto Final</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Desechos</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Usuario</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Gestor de Catalogo</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Tipo Documento</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registrar Rol</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registrar Proveedor</a>
+    </div>
+
+    <div style="font-size:12px;" class="contenedor-logos">
+        <div class="logo">
+        <img src="../../assets/img/menu.png" width="20" height="20">
+        </div>
+        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Ciudades</a>
+    </div>
 </div>
-   
-<div id="page-wrapper">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Inicio</h1>
-                    <!-- /.row -->
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <i class="fa fa-comments fa-5x"></i>
-                                        </div>
-                                        <div class="col-xs-9 text-right">
-                                            <div class="huge">26</div>
-                                            <div>New Comments!</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">Ver Detalles</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
 
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-green">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <i class="fa fa-tasks fa-5x"></i>
-                                        </div>
-                                        <div class="col-xs-9 text-right">
-                                            <div class="huge">12</div>
-                                            <div>Nuevas reservas</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">Ver Detalles</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+<br></br>
 
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-yellow">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <i class="fa fa-shopping-cart fa-5x"></i>
-                                        </div>
-                                        <div class="col-xs-9 text-right">
-                                            <div class="huge">124</div>
-                                            <div>Nuevos pedidos</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">Ver Detalles</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+<div id="body">
+    <div id="texto">
+        <!--Cuerpo-->
+        <p id="texto-contenedor-1">Nueva Fase de desarrollo en php, el sistema está en pleno desarrollo.</p>
+    </div>
 
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-red">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-3">
-                                            <i class="fa fa-support fa-5x"></i>
-                                        </div>
-                                        <div class="col-xs-9 text-right">
-                                            <div class="huge">13</div>
-                                            <div>Support Tickets!</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">Ver Detalles</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                
-                <div class="card mb-3">
-          <div class="card-body">
-            <div class="row">
-                        <div class="col-lg-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
-                                    <div class="pull-right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle"
-                                                    data-toggle="dropdown">
-                                                Actions
-                                                <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right" role="menu">
-                                                <li><a href="#">Action</a>
-                                                </li>
-                                                <li><a href="#">Another action</a>
-                                                </li>
-                                                <li><a href="#">Something else here</a>
-                                                </li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.panel-heading -->
-                                <div class="panel-body">
-                                    <div id="morris-area-chart"></div>
-                                </div>
-                                <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
-                                    <div class="pull-right">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle"
-                                                    data-toggle="dropdown">
-                                                Actions
-                                                <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right" role="menu">
-                                                <li><a href="#">Action</a>
-                                                </li>
-                                                <li><a href="#">Another action</a>
-                                                </li>
-                                                <li><a href="#">Something else here</a>
-                                                </li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                
-          </div>
-      </div>
-  </div>
+    <div id="foto">
+            <img id="foto-contenedor-1" src="../../assets/img/logo.png"/>
+    </div>
 </div>
 
 
 
-</div>
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/bootstrap.min.js"></script>
-<script src="../../js/metisMenu.min.js"></script>
-<script src="../../js/startmin.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/metisMenu.min.js"></script>
+<script src="../../assets/js/startmin.js"></script>
 
-<!-- Morris Charts JavaScript -->
-<script src="../../js/raphael.min.js"></script>
-<script src="../../js/morris.min.js"></script>
-<script src="../../js/morris-data.js"></script>
-        
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>

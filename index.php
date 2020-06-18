@@ -21,45 +21,59 @@
     <a href="index.php" class="navbar-brand" >
       <img src="assets/img/Logo.png" width="40" height="40" alt="HSD PLUS">
     </a>
-    <a href="index.php" class="navbar-brand" >HSD PLUS</a>
+    <a href="index.php" class="navbar-brand" style="color: #ffffff;">HSD PLUS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-          <a href="Catalogo.php" class="nav-link" style="color: #ffffff;">Catalogo
-          </a>
-          <a href="Contactenos.php" class="nav-link" style="color: #ffffff;">Contactenos
-          </a>
-          <a href="Quienessomos.php" class="nav-link" style="color: #ffffff;">¿Quienes Somos?
-          </a>
-          <a href="Misión y Visión.php" class="nav-link" style="color: #ffffff;">Misión y Visión
-          </a>
-          <a href="Portafolio.php" class="nav-link" style="color: #ffffff;">Portafolio
-          </a>
-        </li>
-      </ul>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="Catalogo.php" class="nav-link" style="color: #ffffff;">Catalogo
+        </a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="Contactenos.php" class="nav-link" style="color: #ffffff;">Contactenos
+        </a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="Quienessomos.php" class="nav-link" style="color: #ffffff;">¿Quienes Somos?
+        </a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="Misión y Visión.php" class="nav-link" style="color: #ffffff;">Misión y Visión
+        </a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="Portafolio.php" class="nav-link" style="color: #ffffff;">Portafolio
+        </a>
+      </li>
+    </ul>
       
-      <div>
-        <button type="button" class="btn btn-info">
-          <a href="start.php"  >
-            <img src="assets/img/ingles.png" width="40" height="40" alt="">
-          </a>
-        </button>
-      </div>
-      
-      &nbsp;
-      &nbsp;
-
-      <div class="btn-group dropleft">
-      <button type="button" class="btn btn-info" class="btn btn-sec dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <img src="assets/img/Usuario.png" width="40" height="40" alt="">
+    <div>
+      <button type="button" class="btn btn-info">
+        <a href="start.php"  >
+          <img src="assets/img/ingles.png" width="40" height="40" alt="">
+        </a>
       </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="./sesion/iniciosesion.php">Iniciar Sesión</a>
-        <a class="dropdown-item" href="./sesion/Registrar.php">Registrar</a>
-      </div>
-      </div>
+    </div>
+      
+    &nbsp;
+    &nbsp;
+
+    <div class="btn-group dropleft">
+    <button type="button" class="btn btn-info" class="btn btn-sec dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="assets/img/Usuario.png" width="40" height="40" alt="">
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="./sesion/iniciosesion.php">Iniciar Sesión</a>
+      <a class="dropdown-item" href="./sesion/Registrar.php">Registrar</a>
+    </div>
 
     </div>
   </nav>
@@ -82,6 +96,9 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
 		</ol>
+  <div class="carousel-item">
+      <img src="assets/img/corporativo.jpg" width="100" height="400px " class="d-block w-100" alt="...">
+    </div>
 	<div class="carousel-inner">
     <div class="carousel-item active">
       <img  src="assets/img/1.jpg" width="100" height="400px whilt " class="d-block w-100" alt="...">
@@ -109,9 +126,6 @@
     </div>
     <div class="carousel-item">
       <img src="assets/img/9.jpg" width="100" height="400px " class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/10.jpg" width="100" height="400px " class="d-block w-100" alt="...">
     </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -19,6 +19,8 @@
 <br/>
 <br/>
 
+<!-- Navbar -->
+
 <div>
   <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #47a5b4;">
     <a href="../../HSD_php/index.php" class="navbar-brand" >
@@ -57,6 +59,8 @@
   </nav>
 </div>
 
+<!--Inicio de sesión estructura-->
+
 <form action="" method="POST">
   <?php
     if(isset($errorLogin)){
@@ -80,13 +84,17 @@
           </div>
 
           <div class="text-center">
+            <p>No Recuerdo mi Contraseña
+              <a href="Recordar.php">Recordar contraseña</a>
+            </p>
+          </div>
+
+          <div class="text-center">
             <p>No estoy registrado
               <a href="Registrar.php">Registrar</a>
             </p>
           </div>
-          <div class="text-center">
-            <a href="Recordar.php">Recordar contraseña</a>
-          </div>
+          
           <br/>
 
         <center>
@@ -100,6 +108,8 @@
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+<!--PHP Systen-->
 
  <?php
 
