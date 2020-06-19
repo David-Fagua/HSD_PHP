@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
   <title>Iniciar Sesión</title>
 
   <link rel="icon" type="image/png" href="../assets/icon/Logo.png">
@@ -62,11 +63,6 @@
 <!--Inicio de sesión estructura-->
 
 <form action="" method="POST">
-  <?php
-    if(isset($errorLogin)){
-      echo $errorLogin;
-    }
-  ?>
   <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6">
@@ -77,7 +73,7 @@
       <div class="myform-bottom">
         <form role="form" action="./Admin/inicio.php" method="post">
           <div class="form-group">
-            <input type="text" placeholder="Usuario" class="form-control" id="user-username">
+            <input type="email" placeholder="Usuario" class="form-control" id="user-username">
           </div>
           <div class="form-group">
             <input type="password" placeholder="Contraseña" class="form-control" id="form-password">
@@ -115,39 +111,5 @@
 
 //inicio Admin=admin/inicio.php 
 //inicio Cliente=cliente/catalogo.php
-
-include_once 'includes/user.php';
-include_once 'includes/user_session.php';
-
-
-$userSession = new UserSession();
-$user = new User();
-
-if(isset($_SESSION['user'])){
-    //echo "hay sesion";
-    $user->setUser($userSession->getCurrentUser());
-    include_once 'admin/inicio.php';
-
-}else if(isset($_POST['username']) && isset($_POST['password'])){
-    
-    $userForm = $_POST['username'];
-    $passForm = $_POST['password'];
-
-    $user = new User();
-    if($user->userExists($userForm, $passForm)){
-        //echo "Existe el usuario";
-        $userSession->setCurrentUser($userForm);
-        $user->setUser($userForm);
-
-        include_once 'admin/home.php';
-    }else{
-        //echo "No existe el usuario";
-        $errorLogin = "Nombre de usuario y/o password incorrecto";
-        include_once 'vistas/login.php';
-    }
-}else{
-    //echo "login";
-    include_once 'vistas/login.php';
-}
 
 ?>

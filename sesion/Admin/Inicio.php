@@ -162,7 +162,7 @@
     </div>
 
     <div id="foto">
-            <img id="foto-contenedor-1" src="../../assets/img/logo.png"/>
+            <img id="foto-contenedor-1" src="../../assets/icon/1.png"/>
     </div>
 </div>
 

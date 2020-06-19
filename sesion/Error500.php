@@ -8,8 +8,8 @@
 
 	<title>Error500</title>
 
-	<link rel="icon" type="image/png" href="../Img/Logo.png">
-	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link rel="icon" type="image/png" href="../assets/icon/Logo.png">
+	<link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
 
 </head>
 
