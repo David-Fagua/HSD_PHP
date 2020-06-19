@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>HSD PLUS</title>
 
@@ -19,19 +19,19 @@
 
 <div>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-    <a href="Catalogo.html" class="navbar-brand" href="#">
+    <a href="Catalogo.php" class="navbar-brand" href="#">
     <img src="../../img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-    <a href="Catalogo.html" class="navbar-brand" href="#">SHD PLUS</a>
+    <a href="Catalogo.php" class="navbar-brand" href="#">SHD PLUS</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-          <a href="Catalogo.html" class="nav-link" style="color: #47A5B4;">Catalogo
+          <a href="Catalogo.php" class="nav-link" style="color: #47A5B4;">Catalogo
           </a>
-          <a href="ConsultarCompras.html" class="nav-link" style="color: #47A5B4;">Consultar Compras
+          <a href="ConsultarCompras.php" class="nav-link" style="color: #47A5B4;">Consultar Compras
           </a>
-          <a href="reservarproducto.html" class="nav-link" style="color: #47A5B4;">Reservaciones
+          <a href="reservarproducto.php" class="nav-link" style="color: #47A5B4;">Reservaciones
           </a>
         </li>
       </ul>
@@ -46,9 +46,9 @@
           <img src="../../img/Usuario.png" width="40" height="40" alt="">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="Cliente.html">Cliente</a>
-          <a class="dropdown-item" href="Cliente.html">Configuracion</a>
-          <a class="dropdown-item" href="../../Inicio.html">Cerrar sesión</a>
+          <a class="dropdown-item" href="Cliente.php">Cliente</a>
+          <a class="dropdown-item" href="Cliente.php">Configuracion</a>
+          <a class="dropdown-item" href="../../Inicio.php">Cerrar sesión</a>
         </div>
       </nav>
     </div>
@@ -59,11 +59,11 @@
   <div class="row featurette">
     <div class="col-md-9 order-md-2">
       <h3 class="featurette-heading">Hilo X</h3>
-      <h6 href="producto.html" class="lead">Un hilo es una hebra larga y delgada de un material textil, especialmente la que se usa para coser. La mayor parte de las fibras textiles, salvo la seda y las fibras sintéticas, no exceden de algunos centímetros de longitud, por lo que es necesario el proceso de hilado. Los hilos se emplean ampliamente en la industria textil para coser, tejer, etc.</h6>
+      <h6 href="producto.php" class="lead">Un hilo es una hebra larga y delgada de un material textil, especialmente la que se usa para coser. La mayor parte de las fibras textiles, salvo la seda y las fibras sintéticas, no exceden de algunos centímetros de longitud, por lo que es necesario el proceso de hilado. Los hilos se emplean ampliamente en la industria textil para coser, tejer, etc.</h6>
       <div class="col-6 col-md">
       <center>
-        <a href="Cotizar.html" style="float:center;" class="btn btn-primary btn-lg" role="button">Cotizar</a>
-        <a href="Reservar.html" style="float:center;" class="btn btn-primary btn-lg" role="button">Reservar</a>
+        <a href="Cotizar.php" style="float:center;" class="btn btn-primary btn-lg" role="button">Cotizar</a>
+        <a href="Reservar.php" style="float:center;" class="btn btn-primary btn-lg" role="button">Reservar</a>
       </center>
     </div>
   </div>
@@ -88,7 +88,7 @@
 			<div class="col-6 col-md">
 				<h5 style="color:#47A5B4;">Servicios</h5>
 				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="Registrar.html">Registrate</a></li>
+					<li><a class="text-muted" href="Registrar.php">Registrate</a></li>
 					<li><a class="text-muted" href="#">Reserva</a></li>
 					<li><a class="text-muted" href="#">Consulta</a></li>
 				</ul>

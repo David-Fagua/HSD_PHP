@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <title>Recordar</title>
@@ -23,23 +23,23 @@
 
 <div>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-    <a href="inicio.html" class="navbar-brand" href="#">
+    <a href="inicio.php" class="navbar-brand" href="#">
     <img src="../img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-    <a href="inicio.html" class="navbar-brand" href="#">HSD PLUS</a>
+    <a href="inicio.php" class="navbar-brand" href="#">HSD PLUS</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-          <a href="../Catalogo.html" class="nav-link" style="color: #47A5B4;">Catalogo
+          <a href="../Catalogo.php" class="nav-link" style="color: #47A5B4;">Catalogo
           </a>
-          <a href="../Contactenos.html" class="nav-link" style="color: #47A5B4;">Contactenos
+          <a href="../Contactenos.php" class="nav-link" style="color: #47A5B4;">Contactenos
           </a>
-          <a href="../Quienessomos.html" class="nav-link" style="color: #47A5B4;">¿Quienes Somos?
+          <a href="../Quienessomos.php" class="nav-link" style="color: #47A5B4;">¿Quienes Somos?
           </a>
-          <a href="../Misión y Visión.html" class="nav-link" style="color: #47A5B4;">Misión y Visión
+          <a href="../Misión y Visión.php" class="nav-link" style="color: #47A5B4;">Misión y Visión
           </a>
-          <a href="../Portafolio.html" class="nav-link" style="color: #47A5B4;">Portafolio
+          <a href="../Portafolio.php" class="nav-link" style="color: #47A5B4;">Portafolio
           </a>
         </li>
       </ul>
@@ -54,8 +54,8 @@
           <img src="../img/Usuario.png" width="40" height="40" alt="">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="./esp/iniciosesion.html">Iniciar Sesión</a>
-          <a class="dropdown-item" href="./esp/Registrar.html">Registrar</a>
+          <a class="dropdown-item" href="./esp/iniciosesion.php">Iniciar Sesión</a>
+          <a class="dropdown-item" href="./esp/Registrar.php">Registrar</a>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@
       <div class="col-6 col-md">
         <h5 style="color:#47A5B4;">Servicios</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="Registrar.html">Registrate</a></li>
+          <li><a class="text-muted" href="Registrar.php">Registrate</a></li>
           <li><a class="text-muted" href="#">Reserva</a></li>
           <li><a class="text-muted" href="#">Consulta</a></li>
         </ul>

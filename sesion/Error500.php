@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="utf-8">
@@ -23,7 +23,7 @@
 			</div>
 			<h2>ERROR DE SERVIDOR INTERNO</h2>
 			<p>Incapaz de encontrar el motivo exacto del error, no se ha podido completar la solicitud.</p>
-			<a href="inicio.html">Pagina de Inicio</a>
+			<a href="../index.php">Pagina de Inicio</a>
 		</div>
 	</div>
 

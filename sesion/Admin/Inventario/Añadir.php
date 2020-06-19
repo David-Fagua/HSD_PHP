@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +9,13 @@
 
     <title>Inventario</title>
 
-    <link rel="icon" type="image/png" href="../../../Img/Logo.png">
-    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../../css/metisMenu.min.css" rel="stylesheet">
-    <link href="../../../css/timeline.css" rel="stylesheet">
-    <link href="../../../css/startmin.css" rel="stylesheet">
-    <link href="../../../css/morris.css" rel="stylesheet">
-    <link href="../../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="../../../assets/Img/Logo.png">
+    <link href="../../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assets/css/metisMenu.min.css" rel="stylesheet">
+    <link href="../../../assets/css/timeline.css" rel="stylesheet">
+    <link href="../../../assets/css/startmin.css" rel="stylesheet">
+    <link href="../../../assets/css/morris.css" rel="stylesheet">
+    <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
         </button>
         <ul class="nav navbar-nav navbar-left navbar-top-links">
-            <li><a href="inicio.html"><i class="fa fa-home fa-fw"></i> Inicio</a></li>
+            <li><a href="inicio.php"><i class="fa fa-home fa-fw"></i> Inicio</a></li>
         </ul>
         <ul class="nav navbar-right navbar-top-links">
             <li class="dropdown navbar-inverse">
@@ -90,21 +90,21 @@
                     <i class="fa fa-user fa-fw"></i> Samuel Sanches <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="../Usuario.html"><i class="fa fa-user fa-fw"></i>Usuario</a>
+                    <li><a href="../Usuario.php"><i class="fa fa-user fa-fw"></i>Usuario</a>
                     </li>
-                    <li><a href="../../Error 404.html"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>
+                    <li><a href="../../Error 404.php"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="../../../Inicio.html"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a>
+                    <li><a href="../../../assets/Inicio.php"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a>
                     </li>
                 </ul>
             </li>
         </ul>
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
-                <a href="inicio.html" class="navbar-brand" href="#">
-                    <img src="../../../img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-                    <a href="inicio.html" class="navbar-brand" href="#">HSD PLUS</a>
+                <a href="inicio.php" class="navbar-brand" href="#">
+                    <img src="../../../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
+                    <a href="inicio.php" class="navbar-brand" href="#">HSD PLUS</a>
                 </br>
                 </br>
                 </br>
@@ -124,16 +124,16 @@
                         <a><i class="fa fa-bar-chart-o fa-fw"></i>Inventarios<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="../Inventario/Inventario.html">Inventario general</a>
+                                <a href="../Inventario/Inventario.php">Inventario general</a>
                             </li>
                             <li>
-                                <a href="../Inventario/Añadir.html">Producto inicial</a>
+                                <a href="../Inventario/Añadir.php">Producto inicial</a>
                             </li>
                             <li>
-                                <a href="../Inventario/Editar.html">Producto en proceso</a>
+                                <a href="../Inventario/Editar.php">Producto en proceso</a>
                             </li>
                             <li>
-                                <a href="../Inventario/Eliminar.html">Producto final</a>
+                                <a href="../Inventario/Eliminar.php">Producto final</a>
                             </li>
                         </ul>
                     </li>
@@ -141,29 +141,29 @@
                         <a><i class="fa fa-bar-chart-o fa-fw"></i>Ventas<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="../Ventas/Registrar.html">Registrar</a>
+                                <a href="../Ventas/Registrar.php">Registrar</a>
                             </li>
                             <li>
-                                <a href="../Ventas/Consultar.html">Consultar</a>
+                                <a href="../Ventas/Consultar.php">Consultar</a>
                             </li>
                             <li>
-                                <a href="../Ventas/Modificar.html">Modificar</a>
+                                <a href="../Ventas/Modificar.php">Modificar</a>
                             </li>
                             <li>
-                                <a href="../Ventas/Historial de ventas.html">Historial de ventas</a>
+                                <a href="../Ventas/Historial de ventas.php">Historial de ventas</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../Catalogo/Modificar.html"><i class="fa fa-edit fa-fw"></i>Gestor del Catalogo
+                        <a href="../Catalogo/Modificar.php"><i class="fa fa-edit fa-fw"></i>Gestor del Catalogo
                         </a>
                     </li>
                     <li>
-                        <a href="../Reservaciones.html"><i class="fa fa-edit fa-fw"></i> Reservas de los Clientes
+                        <a href="../Reservaciones.php"><i class="fa fa-edit fa-fw"></i> Reservas de los Clientes
                         </a>
                     </li>
                     <li>
-                        <a href="../Usuarios.html"><i class="fa fa-edit fa-fw"></i> Usuarios
+                        <a href="../Usuarios.php"><i class="fa fa-edit fa-fw"></i> Usuarios
                         </a>
                     </li>
                 </ul>
@@ -273,10 +273,10 @@
     </div>
 </div>
 
-<script src="../../../js/jquery.min.js"></script>
-<script src="../../../js/bootstrap.min.js"></script>
-<script src="../../../js/metisMenu.min.js"></script>
-<script src="../../../js/startmin.js"></script>
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/bootstrap.min.js"></script>
+<script src="../../../assets/js/metisMenu.min.js"></script>
+<script src="../../../assets/js/startmin.js"></script>
 
 </body>
 </html>

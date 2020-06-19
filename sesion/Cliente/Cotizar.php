@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>Cotizar</title>
 
@@ -18,19 +18,19 @@
 
 <div>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-    <a href="Catalogo.html" class="navbar-brand" href="#">
+    <a href="Catalogo.php" class="navbar-brand" href="#">
     <img src="../../assets/img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-    <a href="Catalogo.html" class="navbar-brand" href="#">SHD PLUS</a>
+    <a href="Catalogo.php" class="navbar-brand" href="#">SHD PLUS</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-          <a href="Catalogo.html" class="nav-link" style="color: #47A5B4;">Catalogo
+          <a href="Catalogo.php" class="nav-link" style="color: #47A5B4;">Catalogo
           </a>
-          <a href="ConsultarCompras.html" class="nav-link" style="color: #47A5B4;">Consultar Compras
+          <a href="ConsultarCompras.php" class="nav-link" style="color: #47A5B4;">Consultar Compras
           </a>
-          <a href="reservarproducto.html" class="nav-link" style="color: #47A5B4;">Reservaciones
+          <a href="reservarproducto.php" class="nav-link" style="color: #47A5B4;">Reservaciones
           </a>
         </li>
       </ul>
@@ -45,9 +45,9 @@
           <img src="../../assets/img/Usuario.png" width="40" height="40" alt="">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="Cliente.html">Cliente</a>
-          <a class="dropdown-item" href="Cliente.html">Configuracion</a>
-          <a class="dropdown-item" href="../../Inicio.html">Cerrar sesión</a>
+          <a class="dropdown-item" href="Cliente.php">Cliente</a>
+          <a class="dropdown-item" href="Cliente.php">Configuracion</a>
+          <a class="dropdown-item" href="../../Inicio.php">Cerrar sesión</a>
         </div>
       </nav>
     </div>
@@ -104,7 +104,7 @@
           </div>
         </div>
       </form>
-      <a href="imprimircotizacion.html" style="float:right;" class="btn btn-primary btn-lg" role="button">Finalizar Cotizacion</a>
+      <a href="imprimircotizacion.php" style="float:right;" class="btn btn-primary btn-lg" role="button">Finalizar Cotizacion</a>
     </div>
     <div class="col-md-8 order-md-1">
       <form class="needs-validation" novalidate>
@@ -130,8 +130,8 @@
             <h3 class="text-center" class="featurette-heading">$25.000</h3>
           </div>
         </div>
-        <a href="Cotizar.html" style="float:right;" class="btn btn-primary btn-lg" role="button">añadir al Carrito</a>
-        <a href="Catalogo.html" style="float:right;" class="btn btn-primary btn-lg" role="button">Ver mas productos</a>
+        <a href="Cotizar.php" style="float:right;" class="btn btn-primary btn-lg" role="button">añadir al Carrito</a>
+        <a href="Catalogo.php" style="float:right;" class="btn btn-primary btn-lg" role="button">Ver mas productos</a>
       </div>
     </div>
   </div>
@@ -157,7 +157,7 @@
 			<div class="col-6 col-md">
 				<h5 style="color:#47A5B4;">Servicios</h5>
 				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="Registrar.html">Registrate</a></li>
+					<li><a class="text-muted" href="Registrar.php">Registrate</a></li>
 					<li><a class="text-muted" href="#">Reserva</a></li>
 					<li><a class="text-muted" href="#">Consulta</a></li>
 				</ul>

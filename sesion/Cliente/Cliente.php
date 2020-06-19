@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>Usuario</title>
 
@@ -20,19 +20,19 @@
 
 <div>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-    <a href="Catalogo.html" class="navbar-brand" href="#">
+    <a href="Catalogo.php" class="navbar-brand" href="#">
     <img src="../../img/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-    <a href="Catalogo.html" class="navbar-brand" href="#">SHD PLUS</a>
+    <a href="Catalogo.php" class="navbar-brand" href="#">SHD PLUS</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-          <a href="Catalogo.html" class="nav-link" style="color: #47A5B4;">Catalogo
+          <a href="Catalogo.php" class="nav-link" style="color: #47A5B4;">Catalogo
           </a>
-          <a href="ConsultarCompras.html" class="nav-link" style="color: #47A5B4;">Consultar Compras
+          <a href="ConsultarCompras.php" class="nav-link" style="color: #47A5B4;">Consultar Compras
           </a>
-          <a href="reservarproducto.html" class="nav-link" style="color: #47A5B4;">Reservaciones
+          <a href="reservarproducto.php" class="nav-link" style="color: #47A5B4;">Reservaciones
           </a>
         </li>
       </ul>
@@ -47,9 +47,9 @@
           <img src="../../img/Usuario.png" width="40" height="40" alt="">
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="Cliente.html">Cliente</a>
-          <a class="dropdown-item" href="Cliente.html">Configuracion</a>
-          <a class="dropdown-item" href="../../Inicio.html">Cerrar sesión</a>
+          <a class="dropdown-item" href="Cliente.php">Cliente</a>
+          <a class="dropdown-item" href="Cliente.php">Configuracion</a>
+          <a class="dropdown-item" href="../../Inicio.php">Cerrar sesión</a>
         </div>
       </nav>
     </div>
