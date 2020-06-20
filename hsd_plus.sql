@@ -1,44 +1,25 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-03-2020 a las 21:46:08
--- Versión del servidor: 10.4.8-MariaDB
--- Versión de PHP: 7.1.33
+-- Tiempo de generación: 20-06-2020 a las 04:18:09
+-- Versión del servidor: 10.4.11-MariaDB
+-- Versión de PHP: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Base de datos: `hsd_plus`
 --
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `catalogo`
---
-
-CREATE TABLE `catalogo` (
-  `codigo` int(11) NOT NULL,
-  `nombre` varchar(45) DEFAULT NULL,
-  `articulofinal` int(11) NOT NULL,
-  `descripcion` varchar(350) DEFAULT NULL,
-  `fecha` date DEFAULT NULL,
-  `precio_unitario` decimal(10,0) NOT NULL,
-  `stock` int(11) NOT NULL,
-  `imagen` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `catalogo`
---
-
-INSERT INTO `catalogo` (`codigo`, `nombre`, `articulofinal`, `descripcion`, `fecha`, `precio_unitario`, `stock`, `imagen`) VALUES
-(2, 'Medellin', 6, 'werty', '2020-03-12', '1234567', 156780, 'amarillo.PNG');
 
 -- --------------------------------------------------------
 
@@ -284,26 +265,6 @@ INSERT INTO `reservas` (`id_reserva`, `fecha_reserva`, `cantidad`, `precio_total
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `roles`
---
-
-CREATE TABLE `roles` (
-  `id_rol` int(11) NOT NULL,
-  `nombre` varchar(45) NOT NULL,
-  `fecha_apertura` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `roles`
---
-
-INSERT INTO `roles` (`id_rol`, `nombre`, `fecha_apertura`) VALUES
-(1, 'Administrador', '2000-02-01'),
-(2, 'Cliente', '0200-03-04');
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `tipodocumentos`
 --
 
@@ -330,61 +291,32 @@ INSERT INTO `tipodocumentos` (`id_tdocumento`, `abrebiatura`, `nombre`) VALUES
 --
 
 CREATE TABLE `usuarios` (
-  `id_usuario` int(11) NOT NULL,
-  `imagen` varchar(45) DEFAULT NULL,
-  `tipo_documento` int(11) NOT NULL,
-  `numerodocumento` varchar(45) NOT NULL,
-  `nombres` varchar(45) NOT NULL,
-  `primer_apellido` varchar(45) NOT NULL,
-  `segundo_apellido` varchar(45) NOT NULL,
-  `correo` varchar(45) NOT NULL,
-  `clave` varchar(45) NOT NULL,
-  `telefono` varchar(20) DEFAULT NULL,
-  `ciudad` int(11) NOT NULL,
-  `estado` tinyint(4) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `usuario` varchar(30) COLLATE utf8_spanish_ci NOT NULL,
+  `email` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `privilegio` int(2) NOT NULL,
+  `fecha_registro` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_usuario`, `imagen`, `tipo_documento`, `numerodocumento`, `nombres`, `primer_apellido`, `segundo_apellido`, `correo`, `clave`, `telefono`, `ciudad`, `estado`) VALUES
-(32, NULL, 1, '09876543245678', 'Harold ', 'Rojas', 'Laguna', 'Rlaguna@misena.edu.co', '1234567', '643478890', 20, 1),
-(35, NULL, 1, '09876543245678', 'David', 'Fagua', 'Murillo', 'JFagua@misena.edu.co', '123456789', '643478890', 20, 0),
-(45, NULL, 1, '1030010606', 'Karen Patricia', 'Vanegas', 'Salguero', 'Karen@misena.edu.co', '12345', '123456789', 5, 0),
-(54, NULL, 1, '1030621769', 'Samuel', 'Salguero ', 'Carrillo', 'ssalguero9@misena.edu.co', 'sam', '12345678', 20, 0);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `usuarios_roles`
---
-
-CREATE TABLE `usuarios_roles` (
-  `roles_id_rol` int(11) NOT NULL,
-  `usuarios_id_usuario` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `usuarios_roles`
---
-
-INSERT INTO `usuarios_roles` (`roles_id_rol`, `usuarios_id_usuario`) VALUES
-(1, 32),
-(1, 35),
-(1, 54),
-(2, 45);
+INSERT INTO `usuarios` (`id`, `nombre`, `usuario`, `email`, `password`, `privilegio`, `fecha_registro`) VALUES
+(1, 'Cesar Mejia', 'ucesar', 'cesar@eytoo.com', '1234', 1, '2016-08-18 08:59:20'),
+(2, 'Alan Mejia', 'ualan', 'cesar@eytoo.com', '1234', 2, '2016-08-18 08:59:20'),
+(5, 'Delectus fugit', 'uadmin', 'dyxisev@yahoo.com', 'Pa$$w0rd!', 2, '2016-10-06 11:30:53'),
+(6, 'alan', 'asdasd', 'alan@web.co', '12345', 2, '2016-10-06 11:33:37'),
+(7, 'Vsadsad', 'asdad', 'qusy@gmail.com', 'Pa$$w0rd!', 2, '2016-10-06 11:34:30'),
+(8, 'Alan Vidales', 'udev', 'avidal@dev.com', '1234', 2, '2016-10-06 11:35:32'),
+(9, 'Juan David', 'fagu', 'fagua99@gmail.com', '12345', 1, '2020-06-19 21:38:14'),
+(10, 'Samuel Salguero', 'sam', 'ssalguero9@misena.edu.co', 'sam', 2, '2020-06-19 22:04:03');
 
 --
 -- Índices para tablas volcadas
 --
-
---
--- Indices de la tabla `catalogo`
---
-ALTER TABLE `catalogo`
-  ADD PRIMARY KEY (`codigo`),
-  ADD KEY `nombre` (`articulofinal`);
 
 --
 -- Indices de la tabla `ciudades`
@@ -458,13 +390,6 @@ ALTER TABLE `reservas`
   ADD KEY `fkid_reserva_usuarios` (`cliente`);
 
 --
--- Indices de la tabla `roles`
---
-ALTER TABLE `roles`
-  ADD PRIMARY KEY (`id_rol`),
-  ADD UNIQUE KEY `nombre` (`nombre`);
-
---
 -- Indices de la tabla `tipodocumentos`
 --
 ALTER TABLE `tipodocumentos`
@@ -475,26 +400,11 @@ ALTER TABLE `tipodocumentos`
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id_usuario`),
-  ADD KEY `fkid_usuario_tipodocumentos` (`tipo_documento`),
-  ADD KEY `fkid_usuario_ciudades` (`ciudad`);
-
---
--- Indices de la tabla `usuarios_roles`
---
-ALTER TABLE `usuarios_roles`
-  ADD PRIMARY KEY (`roles_id_rol`,`usuarios_id_usuario`),
-  ADD KEY `fkusuarios_roles_usuarios` (`usuarios_id_usuario`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
-
---
--- AUTO_INCREMENT de la tabla `catalogo`
---
-ALTER TABLE `catalogo`
-  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `ciudades`
@@ -545,102 +455,10 @@ ALTER TABLE `reservas`
   MODIFY `id_reserva` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- AUTO_INCREMENT de la tabla `roles`
---
-ALTER TABLE `roles`
-  MODIFY `id_rol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT de la tabla `tipodocumentos`
---
-ALTER TABLE `tipodocumentos`
-  MODIFY `id_tdocumento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `catalogo`
---
-ALTER TABLE `catalogo`
-  ADD CONSTRAINT `fkcodigo_producto_final` FOREIGN KEY (`articulofinal`) REFERENCES `producto_final` (`id_productof`);
-
---
--- Filtros para la tabla `desechos`
---
-ALTER TABLE `desechos`
-  ADD CONSTRAINT `fkid_desecho_inventario_general` FOREIGN KEY (`articulo`) REFERENCES `inventario_general` (`id_articulo`),
-  ADD CONSTRAINT `fkid_desecho_usuarios` FOREIGN KEY (`responsable`) REFERENCES `usuarios` (`id_usuario`);
-
---
--- Filtros para la tabla `inventario_general`
---
-ALTER TABLE `inventario_general`
-  ADD CONSTRAINT `fkid_articulo_proveedores` FOREIGN KEY (`proveedor`) REFERENCES `proveedores` (`id_proveedor`),
-  ADD CONSTRAINT `fkid_articulo_usuarios` FOREIGN KEY (`responsable`) REFERENCES `usuarios` (`id_usuario`);
-
---
--- Filtros para la tabla `productofinal_reservas`
---
-ALTER TABLE `productofinal_reservas`
-  ADD CONSTRAINT `fkproductofinal_productofinal_reservas` FOREIGN KEY (`id_reserva_reserva`) REFERENCES `reservas` (`id_reserva`),
-  ADD CONSTRAINT `fkproductofinal_reservas_productofinal` FOREIGN KEY (`id_productofina_final`) REFERENCES `producto_final` (`id_productof`);
-
---
--- Filtros para la tabla `producto_final`
---
-ALTER TABLE `producto_final`
-  ADD CONSTRAINT `fkid_productof_inventario_general` FOREIGN KEY (`articulo`) REFERENCES `inventario_general` (`id_articulo`),
-  ADD CONSTRAINT `fkid_productof_usuarios` FOREIGN KEY (`responsable`) REFERENCES `usuarios` (`id_usuario`);
-
---
--- Filtros para la tabla `producto_proceso`
---
-ALTER TABLE `producto_proceso`
-  ADD CONSTRAINT `fk2id_proceso_inventario_general` FOREIGN KEY (`articulo_inicial2`) REFERENCES `inventario_general` (`id_articulo`),
-  ADD CONSTRAINT `fkid_proceso_inventario_general` FOREIGN KEY (`articulo_inicial`) REFERENCES `inventario_general` (`id_articulo`),
-  ADD CONSTRAINT `fkid_proceso_producto_final` FOREIGN KEY (`producto_final`) REFERENCES `producto_final` (`id_productof`),
-  ADD CONSTRAINT `fkid_proceso_usuarios` FOREIGN KEY (`responsable`) REFERENCES `usuarios` (`id_usuario`);
-
---
--- Filtros para la tabla `proveedores`
---
-ALTER TABLE `proveedores`
-  ADD CONSTRAINT `fknit_ciudades` FOREIGN KEY (`ciudad`) REFERENCES `ciudades` (`id_ciudad`);
-
---
--- Filtros para la tabla `registro_ventas`
---
-ALTER TABLE `registro_ventas`
-  ADD CONSTRAINT `fk2id_venta_usuarios` FOREIGN KEY (`responsable`) REFERENCES `usuarios` (`id_usuario`),
-  ADD CONSTRAINT `fkid_venta_reservas` FOREIGN KEY (`reserva`) REFERENCES `reservas` (`id_reserva`);
-
---
--- Filtros para la tabla `reservas`
---
-ALTER TABLE `reservas`
-  ADD CONSTRAINT `fkid_reserva_usuarios` FOREIGN KEY (`cliente`) REFERENCES `usuarios` (`id_usuario`);
-
---
--- Filtros para la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD CONSTRAINT `fkid_usuario_ciudades` FOREIGN KEY (`ciudad`) REFERENCES `ciudades` (`id_ciudad`),
-  ADD CONSTRAINT `fkid_usuario_tipodocumentos` FOREIGN KEY (`tipo_documento`) REFERENCES `tipodocumentos` (`id_tdocumento`);
-
---
--- Filtros para la tabla `usuarios_roles`
---
-ALTER TABLE `usuarios_roles`
-  ADD CONSTRAINT `fkusuarios_roles_usuarios` FOREIGN KEY (`usuarios_id_usuario`) REFERENCES `usuarios` (`id_usuario`),
-  ADD CONSTRAINT `fkusuarios_usuarios_roles` FOREIGN KEY (`roles_id_rol`) REFERENCES `roles` (`id_rol`);
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
