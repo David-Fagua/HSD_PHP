@@ -20,10 +20,8 @@
 
 <body>
 
-<br/>
-<br/>
-<br/>
-<br/>
+<br></br>
+</br>
 
 <!-- Navbar -->
 
@@ -31,7 +29,7 @@
   <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #47a5b4;">
     <a href="../../HSD_php/index.php" class="navbar-brand" >
       <img src="../assets/icon/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-      <a href="../../HSD_php/index.php" class="navbar-brand" >HSD PLUS</a>
+      <a href="../../HSD_php/index.php" class="navbar-brand" style="color: #ffffff;">HSD PLUS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,43 +42,58 @@
 
 <!--Inicio de sesión estructura-->
 
-<form id="loginForm" action="validarCode.php" method="POST" role="form">
-  <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-      <center>
-        <img src="../assets/icon/Usuario.png" width="100" height="100" alt="HSD PLUS">
-        <h2>Iniciar Sesión</h2>
-      </center>
-      <div class="myform-bottom">
-        <form role="form" action="./Admin/inicio.php" method="post">
-          <div class="form-group">
-            <input type="text" name="txtUsuario" class="form-control" id="usuario" autofocus required placeholder="usuario">
-          </div>
-          <div class="form-group">
-            <input type="password" placeholder="Contraseña" name="txtPassword" class="form-control" required id="password">
-          </div>
-          <div class="text-center">
-            <p>No Recuerdo mi Contraseña
-              <a href="Recordar.php">Recordar contraseña</a>
-            </p>
-          </div>
-          <div class="text-center">
-            <p>No estoy registrado
-              <a href="Registrar.php">Registrar</a>
-            </p>
-          </div>
-          <br/>
-          <center>
-            <button style="float:center;" class="btn btn-primary btn-lg" role="button" type="submit" class="mybtn">
-              Ingresar
-            </button>
-          </center>
-        </form>
-      </div>
+<div class="row">
+  <div class="col-md-3">
     </div>
+    <div class="col-md-6">
+    <form id="loginForm" action="validarCode.php" method="POST" role="form" class="border border-light p-5" style="background-color: #47a5b4;">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <center>
+            <img src="../assets/icon/Usuario.png" width="100" height="100" alt="HSD PLUS">
+            <h2>Iniciar Sesión</h2>
+          </center>
+          <div class="myform-bottom">
+            <form role="form" action="./Admin/inicio.php" method="post">
+              <div class="form-group row">
+                <h2 for="usuario" class="col-sm-4 col-form-label">Usuario</h2>
+                <div class="col-sm-8">
+                  <input type="text" name="txtUsuario" class="form-control" id="usuario" autofocus required placeholder="Usuario">
+                </div>
+              </div>
+              <div class="form-group row">
+                <h2 for="Contraseña" class="col-sm-4 col-form-label">Contraseña</h2>
+                <div class="col-sm-8">
+                  <input type="password" placeholder="Contraseña" name="txtPassword" class="form-control" required id="password">
+                </div>
+              </div>
+              <div class="text-center">
+                <h6>¿Olvido su
+                  <a href="Recordar.php" style="color: #ffffff;">Contraseña</a>
+                  ?
+                </h6>
+              </div>
+              <div class="text-center">
+                <h6>¿No esta Registrado?
+                  <a href="Registrar.php" style="color: #ffffff;">Registrarme</a>
+                </h6>
+              </div>
+              <br/>
+              <center>
+                <button style="float:center;" class="btn btn-light btn-lg" role="button" type="submit" class="mybtn">
+                  Ingresar
+                </button>
+              </center>
+            </form>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-3">
+    </div>
+  </form>
   </div>
-</form>
+</div>
 
 <script src="js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -91,12 +104,3 @@
 
 </body>
 </html>
-
-<!--PHP Systen-->
-
- <?php
-
-//inicio Admin=admin/inicio.php 
-//inicio Cliente=cliente/catalogo.php
-
-?>

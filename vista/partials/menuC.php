@@ -1,11 +1,13 @@
-<br/>
+ class="badge badge-light"<br/>
 <br/>
 
 <div>
   <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #009BDB;">
     <a href="../usuario.php" class="navbar-brand">
     <img src="../../assets/icon/Logo.png" width="40" height="40" alt="HSD PLUS"></a>
-    <a href="../usuario.php" style="color: #ffffff;" class="navbar-brand">SHD PLUS</a>
+    <a class="badge badge-light" style="color: #000000">
+        <?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Cliente'; ?>
+    </a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,30 +39,34 @@
         </li>
       </ul>
 
-      <div>
-        <button type="button" class="btn btn-link">
-          <a src="../../assets/img/ingles.png">
-            <img src="../../assets/icon/ingles.png" width="40" height="40" alt="">
-          </a>
-        </button>
-      </div>
-      
-      &nbsp;
-      &nbsp;
+      <ul class="nav navbar-left navbar-top-links">
+        <li class="dropdown navbar-inverse">
+          <div>
+            <button type="button" class="btn btn-link" >
+              <a href="../Error404.php"  >
+                <img src="../../assets/icon/ingles.png" width="40" height="40" alt="">
+              </a>
+            </button>
+          </div>
+        </li>
+      </ul>
 
-      <div class="btn-group dropleft">
-      <button type="button" class="btn btn-link" class="btn btn-sec dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <a href="Catalogo.php" class="nav-link" style="color: #ffffff;">
-        <img src="../../assets/icon/Usuario.png" width="40" height="40">
-        <?php echo $_SESSION["usuario"]["nombre"]; ?>
-      </a> 
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a href="../Error404.php" class="dropdown-item">Usuario</a>
-        <a href="../Error404.php" class="dropdown-item">Configuraciones</a>
-        <a href="../cerrar-sesion.php" class="dropdown-item" >Cerrar Sesión</a>
-      </div>
-      </div>
+
+      <ul class="nav navbar-right navbar-top-links">
+        <li class="dropdown navbar-inverse">
+          <button  class="btn btn-light" class="btn btn-sec"  data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+              <a >
+                  <img src="../../assets/icon/Usuario.png" width="30" height="30">
+                  <?php echo $_SESSION["usuario"]["nombre"]; ?>
+              </a>
+          </button>
+          <ul class="dropdown-menu dropdown-user">
+              <li><a href="../error500.php" class="badge badge-light" style="color: #000000;"><i class="fa fa-user fa-fw"></i>Usuario</a></li>
+              <li><a href="../Error404.php" class="badge badge-light" style="color: #000000;"><i class="fa fa-gear fa-fw"></i> Ajustes</a></li>
+              <li><a href="../cerrar-sesion.php" class="badge badge-light" style="color: #000000;"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a></li>
+          </ul>
+        </li>
+      </ul>
 
     </div>
   </nav>

@@ -4,22 +4,26 @@
     <a href="../admin.php" class="navbar-brand" >
         <img src="../../assets/icon/Logo.png" width="40" height="40" alt="HSD PLUS">
     </a>
-    <a href="../admin.php" class="navbar-brand" >HSD PLUS</a>
+    <a href="../admin.php" class="navbar-brand" style="color: #ffffff;">HSD PLUS</a>
+    <a class="badge badge-info">
+        <?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Cliente'; ?>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
-
-    <div>
-        <button type="button" class="btn btn-info">
-            <a href="../Error404.php">
-            <img src="../../assets/icon/ingles.png" width="30" height="30" alt="">
-            </a>
-        </button>
-    </div>
       
-    &nbsp;
-    &nbsp;
+    <ul class="nav navbar-left navbar-top-links">
+        <li class="dropdown navbar-inverse">
+          <div>
+            <button type="button" class="btn btn-link" >
+              <a href="../Error404.php"  >
+                <img src="../../assets/icon/ingles.png" width="40" height="40" alt="">
+              </a>
+            </button>
+          </div>
+        </li>
+      </ul>
 
     <ul class="nav navbar-right navbar-top-links">
         <li class="dropdown navbar-inverse">
@@ -30,9 +34,9 @@
                 </a>
             </button>
             <ul class="dropdown-menu dropdown-user">
-                <li><a href="Usuario.php"><i class="fa fa-user fa-fw"></i>Usuario</a></li>
-                <li><a href="../Error404.php"><i class="fa fa-gear fa-fw"></i> Ajustes</a></li>
-                <li><a href="../cerrar-sesion.php" ><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a></li>
+                <li><a href="Usuario.php" class="badge badge-light" style="color: #000000;"><i class="fa fa-user fa-fw"></i>Usuario</a></li>
+                <li><a href="../Error404.php" class="badge badge-light" style="color: #000000;"><i class="fa fa-gear fa-fw"></i> Ajustes</a></li>
+                <li><a href="../cerrar-sesion.php" class="badge badge-light" style="color: #000000;"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesión</a></li>
             </ul>
         </li>
     </ul>

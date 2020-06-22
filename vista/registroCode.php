@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 "privilegio" => $usuario->getPrivilegio(),
             );
 
-            header("location:admin.php");
+            header("location:realisado.php");
         }
 
     }
