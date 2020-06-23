@@ -68,7 +68,7 @@ if (isset($_SESSION["usuario"])) {
           &nbsp;
           &nbsp;
           &nbsp;
-          <a href="cliente/reservarproducto.php" class="nav-link" style="color: #ffffff;">Reservaciones
+          <a href="cliente/reservar.php" class="nav-link" style="color: #ffffff;">Reservaciones
           </a>
           &nbsp;
           &nbsp;

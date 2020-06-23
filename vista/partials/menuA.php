@@ -100,7 +100,7 @@
         <div class="logo">
         <img src="../../assets/icon/3.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Usuarios</a>
+        <a  href="Usuarios.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Usuarios</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">

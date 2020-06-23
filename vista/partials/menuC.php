@@ -31,7 +31,7 @@
           &nbsp;
           &nbsp;
           &nbsp;
-          <a href="reservarproducto.php" class="nav-link" style="color: #ffffff;">Reservaciones
+          <a href="reservar.php" class="nav-link" style="color: #ffffff;">Reservaciones
           </a>
           &nbsp;
           &nbsp;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-06-2020 a las 01:05:00
+-- Tiempo de generación: 23-06-2020 a las 01:23:27
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.6
 
@@ -307,7 +307,11 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `nombre`, `usuario`, `email`, `password`, `privilegio`, `fecha_registro`) VALUES
 (9, 'David Fagua', 'fagu', 'fagua99@gmail.com', '12345', 1, '2020-06-19 21:38:14'),
 (10, 'Samuel Salguero', 'sam', 'ssalguero9@misena.edu.co', 'sam', 2, '2020-06-19 22:04:03'),
-(11, 'Harold Rojas', 'Harold', 'harold1199@gmail.com', 'uwu', 2, '2020-06-20 04:11:36');
+(11, 'Harold Rojas', 'Harold', 'harold1199@gmail.com', 'uwu', 2, '2020-06-20 04:11:36'),
+(12, 'Samara Sanchez', 'sama', 'sama@hsd.xyz', 'sama', 1, '2020-06-22 00:14:05'),
+(13, 'Sara Quijote', 'sara', 'sara@hsd.xyz', 'sara', 2, '2020-06-22 00:17:05'),
+(14, 'Raul Casas Paez', 'raul', 'raul@hsd.xyz', 'raul', 2, '2020-06-22 03:34:02'),
+(15, 'Samanta Luke', 'luke', 'luke@hsd.xyz', 'luke', 2, '2020-06-22 04:01:19');
 
 --
 -- Índices para tablas volcadas
@@ -453,7 +457,7 @@ ALTER TABLE `reservas`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
