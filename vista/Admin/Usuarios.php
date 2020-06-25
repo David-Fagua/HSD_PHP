@@ -7,6 +7,12 @@
 
 <?php include '../partials/menuA.php';?>
 
+<?php 
+
+	$conexion=mysqli_connect('localhost','root','','hsd_plus');
+
+ ?>
+
 </br>
 </br>
 
@@ -15,12 +21,37 @@
 <div id="body">
     <div id="texto">
         <!--Cuerpo-->
-        <p id="texto-contenedor-1">Aqui se editaran los usuarios.</p>
-    </div>
-    
+        <p id="texto-contenedor-1">
+        	<table border="1" >
+			<tr>
+				<td>id</td>
+				<td>nombre</td>
+				<td>usuario</td>
+				<td>email</td>
+				<td>password</td>
+				<td>privilegio</td>	
+			</tr>
 
-    <div id="foto">
-            <img id="foto-contenedor-1" src="../../assets/icon/1.png"/>
+			<?php 
+			$sql="SELECT * from t_usuarios";
+			$result=mysqli_query($conexion,$sql);
+
+			while($mostrar=mysqli_fetch_array($result)){
+			 ?>
+
+			<tr>
+				<td><?php echo $mostrar['id'] ?></td>
+				<td><?php echo $mostrar['nombre'] ?></td>
+				<td><?php echo $mostrar['usuario'] ?></td>
+				<td><?php echo $mostrar['email'] ?></td>
+				<td><?php echo $mostrar['password'] ?></td>
+				<td><?php echo $mostrar['privilegio'] ?></td>
+			</tr>
+		<?php 
+		}
+		 ?>
+		</table>
+    </p>
     </div>
 </div>
 
