@@ -14,9 +14,6 @@
 
  ?>
 
-</br>
-</br>
-
 <br></br>
 
 <div class="row">

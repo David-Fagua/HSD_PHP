@@ -7,16 +7,11 @@
 
 <?php include '../partials/menuC.php';?>
 
-<br></br>
-
 <?php 
 
   $conexion=mysqli_connect('localhost','david','qwerty12','hsd_plus');
 
  ?>
-
-</br>
-</br>
 
 <br></br>
 
@@ -72,3 +67,4 @@
 </div>
 
 <?php include '../partials/footerC.php';?>
+  

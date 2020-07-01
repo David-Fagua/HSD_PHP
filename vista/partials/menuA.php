@@ -4,7 +4,6 @@
     <a href="../admin.php" class="navbar-brand" >
         <img src="../../assets/icon/Logo.png" width="40" height="40" alt="HSD PLUS">
     </a>
-    <a href="../admin.php" class="navbar-brand" style="color: #ffffff;">HSD PLUS</a>
     <a class="badge badge-info">
         <?php echo $_SESSION["usuario"]["privilegio"] == 1 ? 'Admin' : 'Cliente'; ?>
     </a>

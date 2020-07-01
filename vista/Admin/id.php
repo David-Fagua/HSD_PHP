@@ -18,35 +18,47 @@
 
 <br></br>
 
-<div id="body">
-    <div id="texto">
-        <!--Cuerpo-->
-        <p id="texto-contenedor-1">
-        	<table border="1" >
-			<tr>
-				<td>id_tdocumento</td>
-				<td>abrebiatura</td>
-				<td>nombre</td>
-			</tr>
+<div id="body" class="row">
+  <div class="col-md-1">
+  </div>
+    <div class="col-md-10">
 
+      <div class="card mb-3">
+          <div class="table-responsive">
+            <center>
+              <h2>Tipo de Documento</h2>
+            </center>
+              <p>
+                <table class="table table-bordered" id="dataTable" width="100%">
+
+				<tr>
+					<td>id_tdocumento</td>
+					<td>abrebiatura</td>
+					<td>nombre</td>
+				</tr>
+
+				<?php 
+				$sql="SELECT * from tipodocumentos";
+				$result=mysqli_query($conexion,$sql);
+
+				while($mostrar=mysqli_fetch_array($result)){
+				 ?>
+
+				<tr>
+					<td><?php echo $mostrar['id_tdocumento'] ?></td>
+					<td><?php echo $mostrar['abrebiatura'] ?></td>
+					<td><?php echo $mostrar['nombre'] ?></td>
+				</tr>
 			<?php 
-			$sql="SELECT * from tipodocumentos";
-			$result=mysqli_query($conexion,$sql);
-
-			while($mostrar=mysqli_fetch_array($result)){
+			}
 			 ?>
-
-			<tr>
-				<td><?php echo $mostrar['id_tdocumento'] ?></td>
-				<td><?php echo $mostrar['abrebiatura'] ?></td>
-				<td><?php echo $mostrar['nombre'] ?></td>
-			</tr>
-		<?php 
-		}
-		 ?>
-		</table>
-    </p>
+			</table>
+	    	</p>
+          </div>
+      </div>
     </div>
+  <div class="col-md-1">
+  </div>
 </div>
 
 <?php include '../partials/footerA.php';?>

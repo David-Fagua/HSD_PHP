@@ -18,43 +18,55 @@
 
 <br></br>
 
-<div id="body">
-    <div id="texto">
-        <!--Cuerpo-->
-        <p id="texto-contenedor-1">
-        	<table border="1" >
-			<tr>
-				<td>id_producto</td>
-				<td>articulo</td>
-				<td>grosor</td>
-				<td>fecha_promocion</td>
-				<td>disponibilidad</td>
-				<td>existencias</td>
-				<td>responsable</td>
-			</tr>
+<div id="body" class="row">
+  <div class="col-md-1">
+  </div>
+    <div class="col-md-10">
 
+      <div class="card mb-3">
+          <div class="table-responsive">
+            <center>
+              <h2>Producto Final</h2>
+            </center>
+              <p>
+                <table class="table table-bordered" id="dataTable" width="100%">
+
+				<tr>
+					<td>id_producto</td>
+					<td>articulo</td>
+					<td>grosor</td>
+					<td>fecha_promocion</td>
+					<td>disponibilidad</td>
+					<td>existencias</td>
+					<td>responsable</td>
+				</tr>
+
+				<?php 
+				$sql="SELECT * from producto_final";
+				$result=mysqli_query($conexion,$sql);
+
+				while($mostrar=mysqli_fetch_array($result)){
+				 ?>
+
+				<tr>
+					<td><?php echo $mostrar['id_productof'] ?></td>
+					<td><?php echo $mostrar['articulo'] ?></td>
+					<td><?php echo $mostrar['grosor'] ?></td>
+					<td><?php echo $mostrar['fecha_promocion'] ?></td>
+					<td><?php echo $mostrar['disponibilidad'] ?></td>
+					<td><?php echo $mostrar['existencias'] ?></td>
+					<td><?php echo $mostrar['responsable'] ?></td>
+				</tr>
 			<?php 
-			$sql="SELECT * from producto_final";
-			$result=mysqli_query($conexion,$sql);
-
-			while($mostrar=mysqli_fetch_array($result)){
+			}
 			 ?>
-
-			<tr>
-				<td><?php echo $mostrar['id_productof'] ?></td>
-				<td><?php echo $mostrar['articulo'] ?></td>
-				<td><?php echo $mostrar['grosor'] ?></td>
-				<td><?php echo $mostrar['fecha_promocion'] ?></td>
-				<td><?php echo $mostrar['disponibilidad'] ?></td>
-				<td><?php echo $mostrar['existencias'] ?></td>
-				<td><?php echo $mostrar['responsable'] ?></td>
-			</tr>
-		<?php 
-		}
-		 ?>
-		</table>
-    </p>
+			</table>
+	    	</p>
+          </div>
+      </div>
     </div>
+  <div class="col-md-1">
+  </div>
 </div>
 
 <?php include '../partials/footerA.php';?>

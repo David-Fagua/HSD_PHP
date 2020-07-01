@@ -18,43 +18,56 @@
 
 <br></br>
 
-<div id="body">
-    <div id="texto">
-        <!--Cuerpo-->
-        <p id="texto-contenedor-1">
-        	<table border="1" >
-			<tr>
-				<td>id_reserva</td>
-				<td>fecha_reserva</td>
-				<td>cantidad</td>
-				<td>precio_total</td>
-				<td>estado</td>
-				<td>observaciones</td>
-				<td>cliente</td>
-			</tr>
+<div id="body" class="row">
+  <div class="col-md-1">
+  </div>
+    <div class="col-md-10">
 
-			<?php 
-			$sql="SELECT * from reservas";
-			$result=mysqli_query($conexion,$sql);
+      <div class="card mb-3">
+          <div class="table-responsive">
+            <center>
+              <h2>Registro de reservas</h2>
+            </center>
+              <p>
+                <table class="table table-bordered" id="dataTable" width="100%">
 
-			while($mostrar=mysqli_fetch_array($result)){
-			 ?>
+	            <tr>
+	              <td>id_reserva</td>
+	              <td>fecha_reserva</td>
+	              <td>cantidad</td>
+	              <td>precio_total</td>
+	              <td>estado</td>
+	              <td>observaciones</td>
+	              <td>cliente</td>
+	            </tr>
 
-			<tr>
-				<td><?php echo $mostrar['id_reserva'] ?></td>
-				<td><?php echo $mostrar['fecha_reserva'] ?></td>
-				<td><?php echo $mostrar['cantidad'] ?></td>
-				<td><?php echo $mostrar['precio_total'] ?></td>
-				<td><?php echo $mostrar['estado'] ?></td>
-				<td><?php echo $mostrar['observaciones'] ?></td>
-				<td><?php echo $mostrar['cliente'] ?></td>
-			</tr>
-		<?php 
-		}
-		 ?>
-		</table>
-    </p>
+	            <?php 
+	            $sql="SELECT * from reservas";
+	            $result=mysqli_query($conexion,$sql);
+
+	            while($mostrar=mysqli_fetch_array($result)){
+	             ?>
+
+	            <tr>
+	              <td><?php echo $mostrar['id_reserva'] ?></td>
+	              <td><?php echo $mostrar['fecha_reserva'] ?></td>
+	              <td><?php echo $mostrar['cantidad'] ?></td>
+	              <td><?php echo $mostrar['precio_total'] ?></td>
+	              <td><?php echo $mostrar['estado'] ?></td>
+	              <td><?php echo $mostrar['observaciones'] ?></td>
+	              <td><?php echo $mostrar['cliente'] ?></td>
+	            </tr>
+	          <?php 
+	          }
+	           ?>
+	          </table>
+	          </p>
+          </div>
+      </div>
     </div>
+  <div class="col-md-1">
+  </div>
 </div>
+
 
 <?php include '../partials/footerA.php';?>
