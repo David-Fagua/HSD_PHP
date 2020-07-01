@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Catalogo</title>
+  <title>Consultar Compra</title>
 
 <?php include '../partials/headC.php';?>
 
@@ -9,87 +9,65 @@
 
 <br></br>
 
-<div class="card mb-3">
-  <h1 class="page-header">Compras Realizadas</h1>
-  <div class="table-responsive">
-    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Position</th>
-          <th>Office</th>
-          <th>Age</th>
-          <th>Start date</th>
-          <th>Salary</th>
-        </tr>
-      </thead>
-      <tfoot>
-        <tr>
-          <th>Name</th>
-          <th>Position</th>
-          <th>Office</th>
-          <th>Age</th>
-          <th>Start date</th>
-          <th>Salary</th>
-        </tr>
-      </tfoot>
-      <tr>
-        <td>Dai Rios</td>
-        <td>Personnel Lead</td>
-        <td>Edinburgh</td>
-        <td>35</td>
-        <td>2012/09/26</td>
-        <td>$217,500</td>
-      </tr>
-      <tr>
-        <td>Michelle House</td>
-        <td>Integration Specialist</td>
-        <td>Sidney</td>
-        <td>37</td>
-        <td>2011/06/02</td>
-        <td>$95,400</td>
-      </tr>
-      <tr>
-        <td>Zorita Serrano</td>
-        <td>Software Engineer</td>
-        <td>San Francisco</td>
-        <td>56</td>
-        <td>2012/06/01</td>
-        <td>$115,000</td>
-      </tr>
-      <tr>
-        <td>Jonas Alexander</td>
-        <td>Developer</td>
-        <td>San Francisco</td>
-        <td>30</td>
-        <td>2010/07/14</td>
-        <td>$86,500</td>
-      </tr>
-      <tr>
-        <td>Shad Decker</td>
-        <td>Regional Director</td>
-        <td>Edinburgh</td>
-        <td>51</td>
-        <td>2008/11/13</td>
-        <td>$183,000</td>
-      </tr>
-      <tr>
-        <td>Michael Bruce</td>
-        <td>Javascript Developer</td>
-        <td>Singapore</td>
-        <td>29</td>
-        <td>2011/06/27</td>
-        <td>$183,000</td>
-      </tr>
-      <tr>
-        <td>Donna Snider</td>
-        <td>Customer Support</td>
-        <td>New York</td>
-        <td>27</td>
-        <td>2011/01/25</td>
-        <td>$112,000</td>
-      </tr>
-    </table>
+<?php 
+
+  $conexion=mysqli_connect('localhost','david','qwerty12','hsd_plus');
+
+ ?>
+
+</br>
+</br>
+
+<br></br>
+
+<div class="row">
+  <div class="col-md-1">
+  </div>
+    <div class="col-md-10">
+
+      <div class="card mb-3">
+          <div class="table-responsive">
+            <center>
+              <h2>Consultar Compras</h2>
+            </center>
+              <p>
+                <table class="table table-bordered" id="dataTable" width="100%">
+
+            <tr>
+              <td>id_reserva</td>
+              <td>fecha_reserva</td>
+              <td>cantidad</td>
+              <td>precio_total</td>
+              <td>estado</td>
+              <td>observaciones</td>
+              <td>cliente</td>
+            </tr>
+
+            <?php 
+            $sql="SELECT * from reservas";
+            $result=mysqli_query($conexion,$sql);
+
+            while($mostrar=mysqli_fetch_array($result)){
+             ?>
+
+            <tr>
+              <td><?php echo $mostrar['id_reserva'] ?></td>
+              <td><?php echo $mostrar['fecha_reserva'] ?></td>
+              <td><?php echo $mostrar['cantidad'] ?></td>
+              <td><?php echo $mostrar['precio_total'] ?></td>
+              <td><?php echo $mostrar['estado'] ?></td>
+              <td><?php echo $mostrar['observaciones'] ?></td>
+              <td><?php echo $mostrar['cliente'] ?></td>
+            </tr>
+          <?php 
+          }
+           ?>
+          </table>
+          </p>
+          </div>
+      </div>
+    </div>
+  <div class="col-md-3">
   </div>
 </div>
 

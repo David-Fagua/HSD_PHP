@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Catalogo</title>
+	<title>Inicio</title>
 
   <?php session_start();?>
     <meta charset="utf-8">

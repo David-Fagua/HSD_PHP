@@ -46,6 +46,7 @@
 
 <div id="barra-lateral" style="background-color: #47A5B4;">
     
+    </br>
 
      <div  id="contenedor-logos-primero" class="contenedor-logos">
         <div class="logo">
@@ -58,42 +59,42 @@
         <div class="logo">
         <img src="../../assets/icon/22.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registro Reserva</a>
+        <a  href="Reserva.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registro Reserva</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
         <img src="../../assets/icon/21.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registro Ventas</a>
+        <a  href="Ventas.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registro Ventas</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
         <img src="../../assets/icon/2.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Inventario General</a>
+        <a  href="Inventario.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Inventario General</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
         <img src="../../assets/icon/15.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Producto en Proceso</a>
+        <a  href="Proceso.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Producto en Proceso</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
         <img src="../../assets/icon/18.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Producto Final</a>
+        <a  href="Final.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Producto Final</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
         <img src="../../assets/icon/16.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Desechos</a>
+        <a  href="Desechos.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Desechos</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
@@ -107,35 +108,35 @@
         <div class="logo">
         <img src="../../assets/icon/13.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Gestor de Catalogo</a>
+        <a  href="Gcatalogo.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Gestor de Catalogo</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
         <img src="../../assets/icon/5.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Tipo Documento</a>
+        <a  href="id.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Tipo Documento</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
         <img src="../../assets/icon/17.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registrar Rol</a>
+        <a  href="Rol.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registrar Rol</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
         <img src="../../assets/icon/20.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registrar Proveedor</a>
+        <a  href="Proveedor.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Registrar Proveedor</a>
     </div>
 
     <div style="font-size:12px;" class="contenedor-logos">
         <div class="logo">
         <img src="../../assets/icon/colombia.png" width="25" height="25">
         </div>
-        <a  href="inicio.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Ciudades</a>
+        <a  href="Ciudades.php" class="title-menu" class="fa fa-sign-out fa-fw" style="color: #ffffff;">Ciudades</a>
     </div>
 </div>
 

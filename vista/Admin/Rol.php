@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Usuarios</title>
+    <title>Ciudades</title>
 
 <?php include '../partials/headA.php';?>
 
@@ -24,30 +24,20 @@
         <p id="texto-contenedor-1">
         	<table border="1" >
 			<tr>
-				<td>id</td>
+				<td>id_ciudad</td>
 				<td>nombre</td>
-				<td>usuario</td>
-				<td>email</td>
-				<td>password</td>
-				<td>privilegio</td>	
-				<td>fecha_registro</td>	
 			</tr>
 
 			<?php 
-			$sql="SELECT * from usuarios";
+			$sql="SELECT * from ciudades";
 			$result=mysqli_query($conexion,$sql);
 
 			while($mostrar=mysqli_fetch_array($result)){
 			 ?>
 
 			<tr>
-				<td><?php echo $mostrar['id'] ?></td>
+				<td><?php echo $mostrar['id_ciudad'] ?></td>
 				<td><?php echo $mostrar['nombre'] ?></td>
-				<td><?php echo $mostrar['usuario'] ?></td>
-				<td><?php echo $mostrar['email'] ?></td>
-				<td><?php echo $mostrar['password'] ?></td>
-				<td><?php echo $mostrar['privilegio'] ?></td>
-				<td><?php echo $mostrar['fecha_registro'] ?></td>
 			</tr>
 		<?php 
 		}

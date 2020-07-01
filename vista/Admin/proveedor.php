@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Usuarios</title>
+    <title>Proveedores</title>
 
 <?php include '../partials/headA.php';?>
 
@@ -24,30 +24,30 @@
         <p id="texto-contenedor-1">
         	<table border="1" >
 			<tr>
-				<td>id</td>
-				<td>nombre</td>
-				<td>usuario</td>
+				<td>id_proveedor</td>
+				<td>nit</td>
+				<td>razon social</td>
+				<td>telefono</td>
 				<td>email</td>
-				<td>password</td>
-				<td>privilegio</td>	
-				<td>fecha_registro</td>	
+				<td>direccion</td>
+				<td>ciudad</td>
 			</tr>
 
 			<?php 
-			$sql="SELECT * from usuarios";
+			$sql="SELECT * from proveedores";
 			$result=mysqli_query($conexion,$sql);
 
 			while($mostrar=mysqli_fetch_array($result)){
 			 ?>
 
 			<tr>
-				<td><?php echo $mostrar['id'] ?></td>
-				<td><?php echo $mostrar['nombre'] ?></td>
-				<td><?php echo $mostrar['usuario'] ?></td>
+				<td><?php echo $mostrar['id_proveedor'] ?></td>
+				<td><?php echo $mostrar['nit'] ?></td>
+				<td><?php echo $mostrar['razon_social'] ?></td>
+				<td><?php echo $mostrar['telefono'] ?></td>
 				<td><?php echo $mostrar['email'] ?></td>
-				<td><?php echo $mostrar['password'] ?></td>
-				<td><?php echo $mostrar['privilegio'] ?></td>
-				<td><?php echo $mostrar['fecha_registro'] ?></td>
+				<td><?php echo $mostrar['direccion'] ?></td>
+				<td><?php echo $mostrar['ciudad'] ?></td>
 			</tr>
 		<?php 
 		}

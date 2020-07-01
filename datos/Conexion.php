@@ -12,7 +12,7 @@ class Conexion
     {
         try {
 
-            $cn = new PDO("mysql:host=localhost;dbname=hsd_plus", "root", "");
+            $cn = new PDO("mysql:host=localhost;dbname=hsd_plus", "david", "qwerty12");
 
             return $cn;
 
