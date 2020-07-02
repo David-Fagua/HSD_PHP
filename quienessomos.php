@@ -50,9 +50,7 @@
 
 <div class="container">
     <center>
-      <video width="720" height="480" controls>
-        <source src="assets/video/video.mp4" type="video/mp4">
-      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Phy9HRdsQUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </center>
 </div>
   
