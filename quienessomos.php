@@ -6,8 +6,6 @@
   <?php include 'partials/head.php';?>
   <?php include 'partials/menu.php';?>
 
-</br>
-
 <div>
   <center>
     <div class="card-body">
@@ -48,9 +46,11 @@
   </div>
 </div>
 
+</br>
+
 <div class="container">
     <center>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Phy9HRdsQUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe frameborder="0" height="300" style="border:0"   width="90%" src="https://www.youtube.com/embed/Phy9HRdsQUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </center>
 </div>
   
