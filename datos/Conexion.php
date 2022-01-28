@@ -1,24 +1,25 @@
 <?php
 
-class Conexion
-{
-
-    /**
-     * Conexión a la base datos
-     *
-     * @return PDO
-     */
-    public static function conectar()
+    class Conexion
     {
-        try {
 
-            $cn = new PDO("mysql:host=localhost;dbname=hsd_plus", "david", "qwerty12");
+        /**
+         * Conexión a la base datos
+         *
+         * @return PDO
+         */
+        public static function conectar()
+        {
+            try {
 
-            return $cn;
+                $cn = new PDO("mysql:host=localhost;dbname=hsd_plus", "root", "");
 
-        } catch (PDOException $ex) {
-            die($ex->getMessage());
+                return $cn;
+
+            } catch (PDOException $ex) {
+                die($ex->getMessage());
+            }
         }
-    }
 
-}
+    }
+?>
